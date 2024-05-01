@@ -1,19 +1,15 @@
 import { useState } from "react";
 import { HeaderM } from "../components/HeaderM";
 import { Footer } from "../components/Footer";
+import { FaRegFilePdf } from "react-icons/fa";
 
 
 export function Stargezer() {
-    const utilities = [
-        { id: "priceList", name: "Price List" },
-        { id: "highlights", name: "Highlights" },
-        { id: "performance", name: "Performance" },
-        { id: "security", name: "Security" }
-    ];
+    const pdfPath = '/pdf/New-Stargazer-E-Brochure-id.pdf'
 
     const Component1 = () => {
         return (
-            <div className="flex justify-center pt-5 px-5">
+            <div className="flex justify-center pt-5 px-5 flex-col">
                 <div className="w-full bg-gradient-to-r from-blue-900 to-blue-950 text-white p-5 rounded-lg flex flex-col gap-5">
                     <div className="flex justify-between font-semibold">
                         <p>Active 1.5 M/T</p>
@@ -46,16 +42,61 @@ export function Stargezer() {
                         <p><i>- 2 Tone Color +Rp. 1.500.000</i></p>
                     </div>
                 </div>
+
+                <div className="w-full items-center flex flex-col py-5 gap-5">
+                    <h1 className="font-semibold text-right"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh mobil-mobil kami? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <a
+                        href={pdfPath}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="py-3 px-5 flex items-center gap-1 bg-blue-950 text-white rounded-lg"><FaRegFilePdf/> E-Brosur</button>
+                    </a>
+                </div>
             </div>
         )
     }
 
     const Component2 = () => {
-        return <div>Component 2</div>;
+        return (
+            <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
+                <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
+                    <h1 className="text-2xl font-bold">Bintang Baru Keluarga</h1>
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/stargezer/Highlight_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                    </div>
+                    <p className="">Saatnya menikmati era baru MPV bersama New <span className="font-bold">STARGAZER</span>, inovasi mobilitas untuk setiap perjalanan berkualitas. Inilah standar baru mobil keluarga yang menghadirkan kenyamanan maksimal dan fitur berkelas, serta memberikan ruang luas untuk kebersamaan Anda dan orang terkasih.</p>
+                </div>
+
+
+                <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
+                    <h1 className="text-2xl font-bold text-center">Bluelink Connect With Your Car</h1>
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/stargezer/23MY_KS_RHD_BLUELINK_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                    </div>
+                    <p className="">New <span className="font-bold">STARGAZER</span> telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.</p>
+                </div>
+
+                <div className="w-full items-center flex flex-col py-5 gap-5">
+                    <h1 className="font-semibold text-right"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh mobil-mobil kami? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <a
+                        href={pdfPath}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="py-3 px-5 flex items-center gap-1 bg-blue-950 text-white rounded-lg"><FaRegFilePdf/> E-Brosur</button>
+                    </a>
+                </div>
+            </div>
+        )
     };
 
     const Component3 = () => {
         return <div>Component 3</div>;
+    };
+
+    const Component4 = () => {
+        return <div>Component 4</div>;
     };
 
 
@@ -99,13 +140,13 @@ export function Stargezer() {
                 </div>
 
                 <div className="px-5 flex flex-wrap gap-2 justify-center">
-                    <div className={`w-[31%] py-3 items-center flex justify-center rounded-md ${activeComponent === 1 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`}  onClick={() => handleClick2(1)}>
+                    <div className={`w-[31%] py-3 items-center flex justify-center rounded-md ${activeComponent === 1 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`} onClick={() => handleClick2(1)}>
                         <button>Pricelist</button>
                     </div>
                     <div className={`w-[33%] py-3 items-center flex justify-center rounded-md ${activeComponent === 2 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`} onClick={() => handleClick2(2)}>
-                        <button>Hightlights</button>
+                        <button>Highlights</button>
                     </div>
-                    <div className={`w-[31%] py-3 items-center flex justify-center rounded-md ${activeComponent === 3 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`}  onClick={() => handleClick2(3)}>
+                    <div className={`w-[31%] py-3 items-center flex justify-center rounded-md ${activeComponent === 3 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`} onClick={() => handleClick2(3)}>
                         <button>Performa</button>
                     </div>
                     <div className={`w-full py-3 items-center flex justify-center rounded-md ${activeComponent === 4 ? 'bg-gradient-to-r from-blue-900 to-blue-950 text-white' : 'bg-slate-200 text-black'}`} onClick={() => handleClick2(4)}>
@@ -116,6 +157,7 @@ export function Stargezer() {
                 {activeComponent === 1 && <Component1 />}
                 {activeComponent === 2 && <Component2 />}
                 {activeComponent === 3 && <Component3 />}
+                {activeComponent === 4 && <Component4 />}
 
                 <div className="pt-5">
                     <div className="flex justify-center text-2xl font-semibold">
