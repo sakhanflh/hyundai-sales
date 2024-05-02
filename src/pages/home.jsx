@@ -93,11 +93,11 @@ export default function HomePage(){
                     </div>
 
                     <div className="w-[48%] h-48 rounded-xl overflow-hidden">
-                        <img src="public/img/1714499198122.jpg" alt="" className="w-full h-full object-cover"/>
+                        <img src="/img/1714499198122.jpg" alt="" className="w-full h-full object-cover"/>
                     </div>
 
                     <div className="w-[48%] h-48 rounded-xl overflow-hidden">
-                        <img src="public/img/1714499198178.jpg" alt="" className="w-full h-full object-cover"/>
+                        <img src="/img/1714499198178.jpg" alt="" className="w-full h-full object-cover"/>
                     </div>
                 </div>
             </div>
