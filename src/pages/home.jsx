@@ -7,6 +7,7 @@ import { TbBrandWechat } from "react-icons/tb";
 import { GiTrade } from "react-icons/gi";
 import { Ri24HoursLine } from "react-icons/ri";
 import { Map } from "../components/home/Map";
+import { Footer } from "../components/Footer";
 
 
 
@@ -100,9 +101,11 @@ export default function HomePage(){
                     </div>
                 </div>
             </div>
-            <div className="w-full h-[10rem] items-center flex">
+            <div className="w-full py-10 items-center flex">
                 <Map />
             </div>
+
+            <Footer />
         </div>
         </>
     )

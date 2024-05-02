@@ -1,22 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 export function Map() {
+    const customIcon = L.icon({
+        iconUrl: 'public/img/icons8-location-50.png',
+        iconAnchor: [25, 50], 
+    });
+
     useEffect(() => {
         const isMap = document.getElementById("map");
         if (isMap && !isMap._leaflet_id) {
             const map = L.map('map', {
                 dragging: false,
-                zoomControl: false,
-            }).setView([51.505, -0.09], 13);
+            }).setView([-6.3795191952172985, 106.92299123756284], 15);
         
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
-            L.marker([51.5, -0.09]).addTo(map)
-                .bindPopup('Hyundai')
+            L.marker([-6.3795191952172985, 106.92299123756284], {icon: customIcon }).addTo(map)
+                // .bindPopup('Hyundai')
                 .openPopup();
         }
     }, []);
