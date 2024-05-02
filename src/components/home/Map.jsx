@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 
 export function Map() {
     const customIcon = L.icon({
-        iconUrl: 'public/img/icons8-location-50.png',
+        iconUrl: '/img/icons8-location-50.png',
         iconAnchor: [25, 50], 
     });
 
