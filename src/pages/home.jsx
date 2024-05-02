@@ -100,7 +100,9 @@ export default function HomePage(){
                     </div>
                 </div>
             </div>
-            <Map />
+            <div className="w-full h-[10rem] items-center flex">
+                <Map />
+            </div>
         </div>
         </>
     )
