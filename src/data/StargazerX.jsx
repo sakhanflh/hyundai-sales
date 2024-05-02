@@ -4,47 +4,33 @@ import { Footer } from "../components/Footer";
 import { FaRegFilePdf } from "react-icons/fa";
 
 
-export function Stargezer() {
-    const pdfPath = '/pdf/New-Stargazer-E-Brochure-id.pdf'
+export function StargazerX() {
+    const pdfPath = '/pdf/BROCHURE_STARGAZER_X_ID.pdf'
 
     const Component1 = () => {
         return (
             <div className="flex justify-center pt-5 px-5 flex-col gap-5">
                 <div className="w-full border-2 shadow-lg text-black p-5 rounded-lg flex flex-col gap-5">
                     <div className="flex justify-between font-semibold">
-                        <p>Active 1.5 M/T</p>
-                        <p>Rp. 249.600.000</p>
+                        <p>Style 1.5 IVT</p>
+                        <p>Rp. 335.800.000</p>
                     </div>
 
                     <div className="flex justify-between font-semibold">
-                        <p>Active 1.5 IVT</p>
-                        <p>Rp. 262.600.000</p>
-                    </div>
-
-                    <div className="flex justify-between font-semibold">
-                        <p>Essential 1.5 M/T</p>
-                        <p>Rp. 261.400.000</p>
-                    </div>
-
-                    <div className="flex justify-between font-semibold">
-                        <p>Essential 1.5 IVT</p>
-                        <p>Rp. 275.300.000</p>
-                    </div>
-
-                    <div className="flex justify-between font-semibold">
-                        <p>Prima 1.5 IVT</p>
-                        <p>Rp. 320.900.000</p>
+                        <p>Prime 1.5 IVT</p>
+                        <p>Rp. 346.400.000</p>
                     </div>
 
                     <div className="border-t border-2 shadow-md bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-lg text-center p-2">
                         <p><i>Noted :</i></p>
                         <p><i>Captain Seat +Rp. 1.000.000</i></p>
                         <p><i>2 Tone Color +Rp. 1.500.000</i></p>
+                        <p><i>Premium Color +Rp. 3.500.000</i></p>
                     </div>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -61,24 +47,24 @@ export function Stargezer() {
         return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-semibold">Bintang Baru Keluarga</h1>
+                    <h1 className="text-2xl font-semibold">Unleash The X In You</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/Highlight_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/stargezerX/D-1-Kolom-Hero-Color-Premium-hargahyundaibatam-081275000750.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">Saatnya menikmati era baru MPV bersama New <span className="font-semibold">STARGAZER</span>, inovasi mobilitas untuk setiap perjalanan berkualitas. Inilah standar baru mobil keluarga yang menghadirkan kenyamanan maksimal dan fitur berkelas, serta memberikan ruang luas untuk kebersamaan Anda dan orang terkasih.</p>
+                    <p className="">Tunjukkan faktor X dalam dirimu bersama Hyundai STARGAZER X. Desain baru berkarakter tegas namun tetap stylish dan futuristik, dilengkapi dengan beragam fitur inovatif membuat eksplorasi dalam hidup lebih menyenangkan.</p>
                 </div>
 
 
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
                     <h1 className="text-2xl font-semibold text-center">Bluelink Connect With Your Car</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/23MY_KS_RHD_BLUELINK_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/stargezerX/D_1_Kolom_bluelink-hargahyundaibatam-081275000750.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">New <span className="font-semibold">STARGAZER</span> telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.</p>
+                    <p className="">Hyundai STARGAZER X telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.</p>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -95,18 +81,15 @@ export function Stargezer() {
         return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-semibold text-center">Bintangnya Performa Maksimal</h1>
+                    <h1 className="text-2xl font-semibold text-center">Explore Powerful Performance</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KV01_comp_Compositing_deliveryCS_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/stargezerX/D_1_Kolom_samping-gasoline-hargahyundaibatam-081275000750.jpeg" alt="" className="object-cover" />
                     </div>
-                    <div className="">
-                        <img src="/stargezer/Performance-ID-1-Kolom_1120x600_PC.jpeg" alt="" />
-                    </div>
-                    <p className="">New <span className="font-semibold">STARGAZER</span> dilengkapi mesin Smartstream 1.5 L dengan sistem Intelligent Variable Transmission (IVT) hasilkan performa tangguh, responsif, serta efisien. Fitur Drive Mode juga tersedia untuk pilihan gaya berkendara yang paling sesuai untuk Anda.</p>
+                    <p className="">Hyundai STARGAZER X bermesin Smartstream G1.5 dengan Intelligent Variable Transmission (IVT) menghasilkan tenaga ekstra, responsif dan efisien bahan bakar.</p>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -120,30 +103,30 @@ export function Stargezer() {
     };
 
     const Component4 = () => {
-        return(
+        return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="">
                     <h1 className="text-2xl font-semibold">Hyundai SmartSense</h1>
                 </div>
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-xl font-semibold">Lane Following Assist (LFA)*</h1>
+                    <h1 className="text-xl font-semibold text-center">6-Airbag system (Driver, Passenger, Side & Curtain)*</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KS_RHD_LFA_2kolom_544x360.jpeg" alt="" className="object-cover" />
+                        <img src="/stargezerX/Airbag-2-Kolom_544x360-.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">Kamera depan melacak penanda garis jalur dan membantu menjaga kendaraan tetap aman di tengah jalur.</p>
+                    <p className="">STARGAZER X dilengkapi dengan 6 airbag untuk melindungi pengemudi dan penumpang apabila terjadi benturan yang tidak diinginkan.</p>
                 </div>
 
 
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-xl font-semibold text-center">Forward Collision-avoidance Assist (FCA)*</h1>
+                    <h1 className="text-xl font-semibold text-center">Blind-spot Collision-avoidance Assist (BCA - Dari parkir paralel)*</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KS_RHD_FCA_2kolom_544x360.jpeg" alt="" className="object-cover" />
+                        <img src="/stargezerX/2_kolom_BCA.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">Fitur ini memperingatkan pengemudi ketika sistem mendeteksi ada risiko benturan dari arah depan, seperti misalnya dengan pejalan kaki atau dengan kendaraan yang tiba-tiba melambat atau berhenti. Jika risiko benturan terus meningkat setelah peringatan, maka sistem secara otomatis akan membantu dengan melakukan pengereman darurat.</p>
+                    <p className="">Blind-spot Collision-avoidance Assist (BCA) memonitor blind-spot Anda saat berkendara. Jika ada kendaraan lain yang terdeteksi di sekitar mobil Anda, LED pada kaca spion akan menyala memberikan peringatan. Jika ada risiko benturan dengan kendaraan di sisi samping dalam kecepatan rendah (0 - 3km/jam), seperti misalnya saat keluar dari posisi parkir paralel, sistem akan berfungsi secara otomatis membantu pengereman darurat.</p>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -187,8 +170,8 @@ export function Stargezer() {
                     </div>
                 </div>
 
-                <div className="w-full items-center flex flex-col py-5 gap-5 pt-10">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                <div className="w-full items-center flex flex-col px-5 py-5 gap-5 pt-10">
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -213,19 +196,19 @@ export function Stargezer() {
 
     const imagePaths = {
         image1: {
-            png: "/stargezer/ks-creamy_51-768x389.png"
+            png: "/stargezerX/ks-creamy_4-1.png"
         },
         image2: {
-            png: "/stargezer/ks-dragon_51-768x389.png"
+            png: "/stargezerX/ks-dragon_4.png"
         },
         image3: {
-            png: "/stargezer/ks-magnetic_51-768x389.png"
+            png: "/stargezerX/ks-magnetic_4.png"
         },
         image4: {
-            png: "/stargezer/ks-midnight-768x389.png"
+            png: "/stargezerX/ks-midnight_4.png"
         },
         image5: {
-            png: "/stargezer/ks-titan_5-768x389.png"
+            png: "/stargezerX/ks-titan_4.png"
         }
     }
 
@@ -238,7 +221,7 @@ export function Stargezer() {
             <HeaderM />
             <div className="pt-16 pb-5">
                 <div className="">
-                    <img src="/img/stargezer.png" alt="" />
+                    <img src="/img/stargezerX.png" alt="" />
                 </div>
 
                 <div className="px-5 flex flex-wrap gap-2 justify-center">

@@ -4,8 +4,8 @@ import { Footer } from "../components/Footer";
 import { FaRegFilePdf } from "react-icons/fa";
 
 
-export function Stargezer() {
-    const pdfPath = '/pdf/New-Stargazer-E-Brochure-id.pdf'
+export function Creta() {
+    const pdfPath = '/pdf/CRETA.pdf'
 
     const Component1 = () => {
         return (
@@ -13,38 +13,42 @@ export function Stargezer() {
                 <div className="w-full border-2 shadow-lg text-black p-5 rounded-lg flex flex-col gap-5">
                     <div className="flex justify-between font-semibold">
                         <p>Active 1.5 M/T</p>
-                        <p>Rp. 249.600.000</p>
+                        <p>Rp. 297.300.000</p>
                     </div>
 
                     <div className="flex justify-between font-semibold">
-                        <p>Active 1.5 IVT</p>
-                        <p>Rp. 262.600.000</p>
+                        <p>Trend 1.5 M/T</p>
+                        <p>Rp. 319.300.000</p>
                     </div>
 
                     <div className="flex justify-between font-semibold">
-                        <p>Essential 1.5 M/T</p>
-                        <p>Rp. 261.400.000</p>
+                        <p>Trend 1.5 IVT</p>
+                        <p>Rp. 340.500.000</p>
                     </div>
 
                     <div className="flex justify-between font-semibold">
-                        <p>Essential 1.5 IVT</p>
-                        <p>Rp. 275.300.000</p>
+                        <p>Style 1.5 IVT</p>
+                        <p>Rp. 383.800.000</p>
                     </div>
 
                     <div className="flex justify-between font-semibold">
-                        <p>Prima 1.5 IVT</p>
-                        <p>Rp. 320.900.000</p>
+                        <p>Prime 1.5 IVT</p>
+                        <p>Rp. 416.800.000</p>
+                    </div>
+
+                    <div className="flex justify-between font-semibold">
+                        <p>Alpha 1.5 IVT</p>
+                        <p>Rp. 421.800.000</p>
                     </div>
 
                     <div className="border-t border-2 shadow-md bg-gradient-to-r from-blue-900 to-slate-900 text-white rounded-lg text-center p-2">
                         <p><i>Noted :</i></p>
-                        <p><i>Captain Seat +Rp. 1.000.000</i></p>
-                        <p><i>2 Tone Color +Rp. 1.500.000</i></p>
+                        <p><i>2 Tone Color +Rp. 3.000.000</i></p>
                     </div>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Penasaran dengan apa yang membuat Hyundai Creta begitu istimewa? Ketuk tombol di bawah dan mari kita telusuri brosur eksklusif kami untuk menemukan jawabannya.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -61,24 +65,24 @@ export function Stargezer() {
         return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-semibold">Bintang Baru Keluarga</h1>
+                    <h1 className="text-2xl font-semibold">Spotlight In Motion</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/Highlight_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/creta/1-kolom-spotlight-in-motion-pc.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">Saatnya menikmati era baru MPV bersama New <span className="font-semibold">STARGAZER</span>, inovasi mobilitas untuk setiap perjalanan berkualitas. Inilah standar baru mobil keluarga yang menghadirkan kenyamanan maksimal dan fitur berkelas, serta memberikan ruang luas untuk kebersamaan Anda dan orang terkasih.</p>
+                    <p className="">Didesain untukmu yang selalu jeli melihat sisi terbaik dari segala tantangan. Bersiap hadapi perubahan, sigap menyesuaikan langkah. Ini saatnya nyalakan sinarmu dan pancarkan. Jadilah spotlight dalam perjalanan menuju masa depan.</p>
                 </div>
 
 
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-semibold text-center">Bluelink Connect With Your Car</h1>
+                    <h1 className="text-2xl font-semibold text-center">Connect With Your Car</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/23MY_KS_RHD_BLUELINK_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/creta/1-kolom-spotlight.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">New <span className="font-semibold">STARGAZER</span> telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.</p>
+                    <p className="">CRETA telah dilengkapi dengan teknologi konektivitas Hyundai Bluelink, sebuah platform yang memudahkan pengecekan informasi penting tentang mobil Anda. Terhubung dengan call center Hyundai 7 x 24 jam saat terjadi kondisi darurat untuk segera memberikan Anda bantuan.</p>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Penasaran dengan apa yang membuat Hyundai Creta begitu istimewa? Ketuk tombol di bawah dan mari kita telusuri brosur eksklusif kami untuk menemukan jawabannya.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -95,18 +99,29 @@ export function Stargezer() {
         return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-2xl font-semibold text-center">Bintangnya Performa Maksimal</h1>
+                    <h1 className="text-2xl font-semibold text-center">Impressive Performance</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KV01_comp_Compositing_deliveryCS_1kolom_D_1220x600.jpeg" alt="" className="object-cover" />
+                        <img src="/creta/1-kolom-impression-performance.jpeg" alt="" className="object-cover" />
                     </div>
-                    <div className="">
-                        <img src="/stargezer/Performance-ID-1-Kolom_1120x600_PC.jpeg" alt="" />
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/creta/1-kolom-smart-stream-ID.jpeg" alt="" className="object-cover" />
                     </div>
-                    <p className="">New <span className="font-semibold">STARGAZER</span> dilengkapi mesin Smartstream 1.5 L dengan sistem Intelligent Variable Transmission (IVT) hasilkan performa tangguh, responsif, serta efisien. Fitur Drive Mode juga tersedia untuk pilihan gaya berkendara yang paling sesuai untuk Anda.</p>
+                    <p className="">Berbekal mesin Smartstream 1.5 L dengan sistem Intelligent Variable Transmission (IVT) hasilkan performa tangguh, responsif, serta efisien. Juga dilengkapi fitur Drive Mode untuk pilihan gaya berkendara yang paling sesuai untuk Anda.</p>
+                </div>
+
+                <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
+                    <h1 className="text-2xl font-semibold text-center">Traction Control Mode</h1>
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/creta/2-kolom-mud.jpeg" alt="" className="object-cover" />
+                    </div>
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/creta/2-kolom-sand.jpeg" alt="" className="object-cover" />
+                    </div>
+                    <p className="">Dengan mengatur kontrol slip roda kanan/kiri sesuai torsi mesin dan pola perpindahan gigi, Traction Control Mode secara otomatis menyempurnakan sistem penggerak roda depan CRETA untuk beradaptasi dengan kondisi jalan.</p>
                 </div>
 
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -120,30 +135,30 @@ export function Stargezer() {
     };
 
     const Component4 = () => {
-        return(
+        return (
             <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
                 <div className="">
                     <h1 className="text-2xl font-semibold">Hyundai SmartSense</h1>
                 </div>
                 <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
-                    <h1 className="text-xl font-semibold">Lane Following Assist (LFA)*</h1>
-                    <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KS_RHD_LFA_2kolom_544x360.jpeg" alt="" className="object-cover" />
-                    </div>
-                    <p className="">Kamera depan melacak penanda garis jalur dan membantu menjaga kendaraan tetap aman di tengah jalur.</p>
-                </div>
-
-
-                <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
                     <h1 className="text-xl font-semibold text-center">Forward Collision-avoidance Assist (FCA)*</h1>
                     <div className="rounded-xl overflow-hidden">
-                        <img src="/stargezer/KS_RHD_FCA_2kolom_544x360.jpeg" alt="" className="object-cover" />
+                        <img src="/creta/1-kolom-hyundai-smart-sense.png" alt="" className="object-cover" />
                     </div>
                     <p className="">Fitur ini memperingatkan pengemudi ketika sistem mendeteksi ada risiko benturan dari arah depan, seperti misalnya dengan pejalan kaki atau dengan kendaraan yang tiba-tiba melambat atau berhenti. Jika risiko benturan terus meningkat setelah peringatan, maka sistem secara otomatis akan membantu dengan melakukan pengereman darurat.</p>
                 </div>
 
+
+                <div className="flex flex-col gap-5 items-center border-2 shadow-md rounded-xl p-5">
+                    <h1 className="text-xl font-semibold text-center">Hill-start Assist Control (HAC)</h1>
+                    <div className="rounded-xl overflow-hidden">
+                        <img src="/creta/2-kolom-hill-start.png" alt="" className="object-cover" />
+                    </div>
+                    <p className="">Saat memulai dari berhenti di tanjakan, Hill-start Assist Control (HAC) mencegah rollback yang tidak disengaja yang dapat terjadi setelah pedal rem dilepaskan.</p>
+                </div>
+
                 <div className="w-full items-center flex flex-col py-5 gap-5 ">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                    <h1 className="font-semibold text-center"><i>Penasaran dengan apa yang membuat Hyundai Creta begitu istimewa? Ketuk tombol di bawah dan mari kita telusuri brosur eksklusif kami untuk menemukan jawabannya.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -187,8 +202,8 @@ export function Stargezer() {
                     </div>
                 </div>
 
-                <div className="w-full items-center flex flex-col py-5 gap-5 pt-10">
-                    <h1 className="font-semibold text-center"><i>Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.</i></h1>
+                <div className="w-full items-center flex flex-col px-5 py-5 gap-5 pt-10">
+                    <h1 className="font-semibold text-center"><i>Penasaran dengan apa yang membuat Hyundai Creta begitu istimewa? Ketuk tombol di bawah dan mari kita telusuri brosur eksklusif kami untuk menemukan jawabannya.</i></h1>
                     <a
                         href={pdfPath}
                         target="_blank"
@@ -213,19 +228,19 @@ export function Stargezer() {
 
     const imagePaths = {
         image1: {
-            png: "/stargezer/ks-creamy_51-768x389.png"
+            png: "/creta/Creta_-_Creamy_Whie_Pearl.png"
         },
         image2: {
-            png: "/stargezer/ks-dragon_51-768x389.png"
+            png: "/creta/Creta_-_Dragon_Red_Pearl-1.png"
         },
         image3: {
-            png: "/stargezer/ks-magnetic_51-768x389.png"
+            png: "/creta/Creta_-_Magetic_Silver_Mentallic-1.png"
         },
         image4: {
-            png: "/stargezer/ks-midnight-768x389.png"
+            png: "/creta/Creta_-_Midnight_Black_Pearl.png"
         },
         image5: {
-            png: "/stargezer/ks-titan_5-768x389.png"
+            png: "/creta/Creta_-_Titan_Gray_Metallic.png"
         }
     }
 
@@ -238,7 +253,7 @@ export function Stargezer() {
             <HeaderM />
             <div className="pt-16 pb-5">
                 <div className="">
-                    <img src="/img/stargezer.png" alt="" />
+                    <img src="/img/creta.png" alt="" />
                 </div>
 
                 <div className="px-5 flex flex-wrap gap-2 justify-center">
