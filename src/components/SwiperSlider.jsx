@@ -15,7 +15,7 @@ export function SwiperSlider() {
                 spaceBetween={50}
                 slidesPerView={1}
                 loop={true}
-                navigation
+                // navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
