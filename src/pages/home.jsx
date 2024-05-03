@@ -25,45 +25,45 @@ export default function HomePage(){
             
             {/* Card Profil */}
             <div className="pt-5 px-5 w-full gap-5 flex items-center flex-col xl:flex-row xl:gap-40 xl:h-[35rem] xl:pl-32">
-                <div className="w-44 xl:w-72 rounded-xl overflow-hidden">
-                    <img src="/img/fotoprofil.jpg" alt="" className="w-full"/>
+                <div className="w-44 h-52 xl:w-72 rounded-xl overflow-hidden">
+                    <img src="/img/fotoprofil.jpg" alt="" className="w-full object-cover"/>
                 </div>
 
-                <div className="w-full xl:w-96 gap-5 flex flex-col">
-                    <h1 className="font-bold text-2xl xl:translate-x-20">Hi, Saya Yoga Aditya Sales Executive Di Hyundai Cibubur</h1>
+                <div className="w-full xl:w-96 gap-5 flex flex-col text-black">
+                    <h1 className="font-bold text-2xl xl:translate-x-20">Halo!, Saya Yoga Aditya, Sales Executive Di Hyundai Cibubur</h1>
 
                     <div className="flex flex-col gap-5 items-center xl:translate-x-20">
-                        <p className=" font-medium">Pelayanan Utama Saya Adalah Penjualan Unit Baru Dan Untuk Mendukung Layanan Utama Ini Saya Memberikan Layanan Spesial Yaitu Tukar Tambah.</p>
-                        <p className=" font-medium">Berbekal Pengalaman Di Bidang Otomotif Sejak Tahun 2011 Dengan Senang Hati Saya Siap Untuk Memberikan Layanan Terbaik Untuk Anda Di Wilayah Cibubur, Jakarta, Bogor, Depok, Tangerang, Bekasi.</p>
-                        <p className="text-center"><i>“Konsumen Baik Hanya dilayani Oleh Sales Terbaik”</i></p>
+                        <p className=" font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
+                        <p className=" font-medium">Dengan antusiasme dan pengalaman dalam industri otomotif sejak tahun 2022, saya siap membantu Anda menemukan kendaraan baru yang sempurna. Wilayah layanan saya mencakup Cibubur, Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
+                        <p className="text-center"><i>“Kepuasan Anda merupakan kesenangan bagi Saya.”</i></p>
                         <p className="text-center"><i>~Yoga 2024~</i></p>
                     </div>
 
-                    <div className="w-full xl:hidden flex flex-wrap gap-2 justify-center">
+                    <div className="w-full xl:hidden flex flex-wrap gap-2 justify-center text-blue-900">
                         <div className="w-[45%] flex flex-col items-center border rounded-lg p-2">
                             <TbBrandWechat className="w-10 h-10"/>
-                            <p>Konsultan Otomotif</p>
+                            <p className="text-black">Konsultan Otomotif</p>
                         </div>
                         <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
                             <FaCarSide className="w-10 h-10"/>
-                            <p>Penjualan Unit Baru</p>
+                            <p className="text-black">Penjualan Unit Baru</p>
                         </div>
                         <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
                             <GiTrade className="w-10 h-10"/>
-                            <p>Tukar Tambah</p>
+                            <p className="text-black">Tukar Tambah</p>
                         </div>
                         <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
                             <FaHome className="w-10 h-10"/>
-                            <p>Home Test Drive</p>
+                            <p className="text-black">Home Test Drive</p>
                         </div>
                         <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
                             <Ri24HoursLine className="w-10 h-10"/>
-                            <p>Chat 24 Jam</p>
+                            <p className="text-black">Chat 24 Jam</p>
                         </div>
                     </div>
 
                     <div className="flex flex-col xl:flex-row gap-5">
-                        <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-green-500 justify-center text-white items-center gap-3 xl:rounded-xl"><FaWhatsapp className="text-2xl" onClick={handleClick}/> Whatsapp</button>
+                        <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-green-500 justify-center text-white items-center gap-3 xl:rounded-xl" onClick={handleClick}><FaWhatsapp className="text-2xl"/> Whatsapp</button>
                         <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-blue-900 justify-center text-white items-center gap-3 xl:rounded-xl"><FaInstagram className="text-2xl"/> Instagram</button>
                     </div>
                 </div>
@@ -101,7 +101,28 @@ export default function HomePage(){
                     </div>
                 </div>
             </div>
-            <div className="w-full py-10 items-center flex">
+
+            <div className="flex pt-5 px-5 gap-3">
+                <div>
+                    <img src="/img/mybank.jpg" alt="" />
+                </div>
+
+                <div>
+                    <img src="/img/mandiri-tunas-finance.jpg" alt="" />
+                </div>
+
+                <div>
+                    <img src="/img/MAF.jpg" alt="" />
+                </div>
+
+                <div>
+                    <img src="/img/cimb-niaga.png" alt="" />
+                </div>
+            </div>
+
+            <div className="w-full py-5 flex flex-col gap-5 relative">
+                <h1 className="font-semibold text-xl w-full text-center text-black">Lokasi</h1>
+
                 <Map />
             </div>
 

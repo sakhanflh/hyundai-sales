@@ -4,8 +4,19 @@ import { SiGmail } from "react-icons/si";
 
 export function Footer() {
     return (
-        <div className="w-full h-[10rem] bg-gradient-to-r from-blue-800 to-blue-950 justify-center flex flex-col gap-5">
-            <div className="text-white flex items-center justify-center w-full gap-5 text-2xl">
+        <div className="w-full bg-gradient-to-r from-blue-800 to-blue-950 justify-center flex flex-col gap-5 p-5">
+            <div className="flex flex-col gap-1">
+                <div className="w-36">
+                    <img src="/img/Harga-Hyundai-Batam.png" alt="" />
+                </div>
+
+                <div className="text-white text-sm">
+                    <p>Hyundai Mobil Indonesia Cibubur</p>
+                    <p>Jl. Alternatif Cibubur Transyogi No. 25 Jatisampurna, Bekasi</p>
+                </div>
+            </div>
+
+            <div className="text-white flex items-center justify-center w-full gap-5 text-base">
                 <div className="border-2 rounded-full p-3">
                     <FaTwitter />
                 </div>
@@ -19,8 +30,8 @@ export function Footer() {
                     <FaInstagram />
                 </div>
             </div>
-            
-            <div className="w-full justify-center items-center flex text-white font-semibold">
+
+            <div className="w-full justify-center items-center flex text-white font-semibold text-sm">
                 <p>Copyright<span className="font-normal">&#9400;</span>2024 Senech.corp</p>
             </div>
         </div>
