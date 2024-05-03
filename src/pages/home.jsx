@@ -102,7 +102,7 @@ export default function HomePage(){
                 </div>
             </div>
 
-            <div className="flex pt-5 px-5 gap-3">
+            <div className="flex pt-5 px-5 gap-3 flex-wrap justify-center">
                 <div>
                     <img src="/img/mybank.jpg" alt="" />
                 </div>
