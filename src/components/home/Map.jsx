@@ -26,7 +26,6 @@ export function Map() {
     }, []);
 
     const openGoogleMaps = () => {
-        console.log('Sukses')
         const lat = -6.3795191952172985;
         const lng = 106.92299123756284;
         window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`);
@@ -34,8 +33,8 @@ export function Map() {
 
     return (
         <div>
-            <div id="map" style={{width: '25rem', height: '20rem'}}></div>
-            <button className="px-2" onClick={openGoogleMaps}>View Large Map on Google Maps</button>
+            <div id="map" style={{width: '24rem', height: '20rem'}}></div>
+            <button className="pl-2" onClick={openGoogleMaps}>View Large Map on Google Maps</button>
         </div>
     );
 }
