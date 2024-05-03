@@ -120,7 +120,7 @@ export default function HomePage(){
                 </div>
             </div>
 
-            <div className="w-full py-5 flex flex-col gap-5 relative items-center -z-10">
+            <div className="w-full py-5 flex flex-col gap-5 relative items-center">
                 <h1 className="font-semibold text-xl w-full text-center text-black">Lokasi</h1>
 
                 <Map />
