@@ -10,7 +10,7 @@ export function SideBar({onShowSidebar}){
                         <li className=" font-semibold text-black">Beranda</li>
                     </Link >
 
-                    <Link className="w-full h-[50%] flex items-center hover:bg-slate-200 px-5">
+                    <Link to={'/produk'} className="w-full h-[50%] flex items-center hover:bg-slate-200 px-5">
                         <li className="font-semibold text-black">Produk</li>
                     </Link>
                 </ul>

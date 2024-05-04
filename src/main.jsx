@@ -7,17 +7,20 @@ import { Stargezer } from './data/Stargezer'
 import { StargazerX } from './data/StargazerX'
 import { Creta } from './data/Creta'
 import { SantaFe } from './data/SantaFe'
+import { Palisade } from './data/Palisade'
+import ProdukPage from './pages/produk'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/produk' element={<ProdukPage />} />
         <Route path='/stargezer' element={<Stargezer/>} />
         <Route path='/stargazerx' element={<StargazerX/>} />
         <Route path='/creta' element={<Creta/>} />
         <Route path='/santafe' element={<SantaFe/>} />
-
+        <Route path='/palisade' element={<Palisade/>} />
       </Routes>
     </HashRouter>
   </React.StrictMode>,

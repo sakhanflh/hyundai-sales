@@ -33,7 +33,7 @@ export function Map() {
 
     return (
         <div>
-            <div id="map" style={{width: '24rem', height: '20rem'}}></div>
+            <div id="map" className="map-desktop map-mobile"></div>
             <button className="pl-2" onClick={openGoogleMaps}>View Large Map on Google Maps</button>
         </div>
     );
