@@ -1,94 +1,21 @@
-import { Link } from "react-router-dom";
+import { CardCar } from "../CardCar";
+import { CarData } from "../../data/CarData";
 
 export function UtilityHome(){
     return(
         <>
         <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0">
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/stargezer.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai STARGAZER</p>
-                    <Link to="/stargezer">
-                        <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                    </Link>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/stargezerX.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai STARGAZER X</p>
-                    <Link to="/stargazerx">
-                        <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                    </Link>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/creta.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai CRETA</p>
-                    <Link to="/creta">
-                        <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                    </Link>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/santafe.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai SANTA FE</p>
-                    <Link to="/santafe">
-                        <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                    </Link>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/palisade.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai PALISADE</p>
-                    <Link to='/palisade'>
-                        <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                    </Link>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/staria.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai STARIA</p>
-                    <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/ioniq5.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai IONIQ 5</p>
-                    <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                </div>
-            </div>
-            <div className="w-72 xl:w-[28%] border rounded-lg p-5 overflow-hidden">
-                <div className="hover:scale-110 transition-all duration-300">
-                    <img src="/img/ioniq6.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                    <p className="text-black font-semibold">Hyundai IONIQ 6</p>
-                    <button className="bg-blue-900 text-white hover:bg-blue-700 transition-all duration-300 px-16 xl:px-24 py-1 rounded-lg font-medium">Selengkapnya</button>
-                </div>
-            </div>
+            {
+                CarData.map((data, index) => (
+                    <CardCar 
+                        key={data.id}
+                        image={data.image}
+                        name={data.name}
+                        linkTo={data.link}
 
-
-            
+                    />
+                ))
+            }
         </div>
         </>
     )
