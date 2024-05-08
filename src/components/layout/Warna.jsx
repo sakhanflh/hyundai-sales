@@ -12,12 +12,12 @@ const Component5 = ({ selectedCarWarna }) => {
 
     return (
         <div className="pt-5">
-            <div className="flex justify-center text-2xl font-semibold">
+            <div className="flex justify-center text-2xl xl:text-3xl font-semibold">
                 <h1>Color Options</h1>
             </div>
 
             <div>
-                <div>
+                <div className=" flex justify-center">
                     <img
                         src={currentImg ? currentImg : warna.data[0].images[0].img}
                         alt=""
@@ -25,10 +25,10 @@ const Component5 = ({ selectedCarWarna }) => {
                 </div>
 
                 <div className="w-full flex justify-center px-20 pt-5">
-                    <div className="bg-gradient-to-r from-blue-950 to-blue-700 w-full flex justify-center items-center gap-5 rounded-lg py-2">
+                    <div className="bg-gradient-to-r from-blue-950 to-blue-700 w-full  xl:w-[30rem] xl:h-[5rem] flex justify-center items-center gap-5 rounded-lg py-3 ">
                         {
                             warna.data[0].colors.map((data, index) => (
-                                <div key={index} className={`w-5 h-5 rounded-full bg-${data.name}`} onClick={() => handleClick(data.name)}></div>
+                                <div key={index} className={`w-7 h-7 xl:w-[3rem] xl:h-[3rem] rounded-full bg-${data.name}`} onClick={() => handleClick(data.name)}></div>
                             ))
                         }
 

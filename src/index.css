@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .map-desktop {
-    width: 80rem;
+    width: 78rem;
     height: 400px;
 }
 
 @media screen and (max-width: 768px){
     .map-mobile {
-        width: 26rem;
+        width: 25rem;
         height: 20rem;
     } 
 }

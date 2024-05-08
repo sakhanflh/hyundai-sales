@@ -11,11 +11,11 @@ export function Navbar(){
             <div>
                 <ul className="text-black flex gap-5">
                     <Link to={'/'}>
-                        <li className="hover:text-blue-900 font-semibold text-black border-r border-black  px-5">Beranda</li>
+                        <li className="hover:text-blue-900 font-semibold text-black border-r border-black  px-5 xl:text-xl">Beranda</li>
                     </Link>
 
                     <Link to={'/produk'}>
-                        <li className="hover:text-blue-900 font-semibold ">Produk</li>
+                        <li className="hover:text-blue-900 font-semibold xl:text-xl">Produk</li>
                     </Link>
                 </ul>
             </div>

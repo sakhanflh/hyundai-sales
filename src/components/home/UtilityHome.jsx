@@ -4,7 +4,7 @@ import { CarData } from "../../data/CarData";
 export function UtilityHome(){
     return(
         <>
-        <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0">
+        <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0 xl:text-xl">
             {
                 CarData.map((data, index) => (
                     <CardCar 
