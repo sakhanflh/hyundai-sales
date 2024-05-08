@@ -34,7 +34,7 @@ export default function HomePage(){
                 </div>
 
                 <div className="w-full xl:w-[35rem] gap-5 flex flex-col text-black">
-                    <h1 className="font-bold text-2xl ">Halo!, Saya Yoga Aditya, Sales Executive Di Hyundai Cibubur</h1>
+                    <h1 className="font-bold text-2xl ">Halo!, Saya Yoga Aditya, Sales Consultant Di Hyundai Cibubur</h1>
 
                     <div className="flex flex-col gap-5 items-center xl:text-lg">
                         <p className=" font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
@@ -109,16 +109,39 @@ export default function HomePage(){
                         <img src="/img/1714499198106.jpg" alt="" className="w-full h-full object-fill"/>
                     </div>
 
-                    <div className="w-full xl:w-[30%] xl:h-96 rounded-xl overflow-hidden">
-                        <img src="/img/1714499198160.jpg" alt="" className="w-full h-full object-cover"/>
-                    </div>
-
                     <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
                         <img src="/img/1714499198122.jpg" alt="" className="w-full h-full object-cover"/>
                     </div>
 
                     <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
                         <img src="/img/1714499198178.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+                    
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_23aa979f.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_29f41f60.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+                    <div className="w-full xl:w-[30%] xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/1714499198160.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_53b76af4.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_986a815c.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_c3848080.jpg" alt="" className="w-full h-full object-cover"/>
+                    </div>
+                    
+                    <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                        <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_e3d8148a.jpg" alt="" className="w-full h-full object-cover"/>
                     </div>
                 </div>
             </div>

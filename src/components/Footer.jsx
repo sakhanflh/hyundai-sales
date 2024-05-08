@@ -1,8 +1,16 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 
 export function Footer() {
+    const handleWhatsapp = () => {
+        window.location.href = 'https://api.whatsapp.com/send/?phone=6283808883438&text&type=phone_number&app_absent=0'
+    }
+
+    const handleInstagram = () => {
+        window.location.href = 'https://www.instagram.com/yoga_aditya117?igsh=MWhmMHY3eHFiMWV5eg=='
+    }
+
     return (
         <div className="w-full bg-gradient-to-r from-blue-800 to-blue-950 justify-center flex flex-col gap-5 p-5">
             <div className="flex flex-col gap-1">
@@ -17,16 +25,13 @@ export function Footer() {
             </div>
 
             <div className="text-white flex items-center justify-center w-full gap-5 text-base xl:text-2xl pt-10">
-                <div className="border-2 rounded-full p-3">
-                    <FaTwitter />
-                </div>
-                <div className="border-2 rounded-full p-3">
-                    <FaFacebook />
+                <div className="border-2 rounded-full p-3" onClick={handleWhatsapp}>
+                    <FaWhatsapp />
                 </div>
                 <div className="border-2 rounded-full p-3">
                     <SiGmail />
                 </div>
-                <div className="border-2 rounded-full p-3">
+                <div className="border-2 rounded-full p-3" onClick={handleInstagram}>
                     <FaInstagram />
                 </div>
             </div>

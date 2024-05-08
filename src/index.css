@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 768px){
     .map-mobile {
-        width: 25rem;
+        width: 100%;
         height: 20rem;
     } 
 }

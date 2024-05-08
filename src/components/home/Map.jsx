@@ -32,7 +32,7 @@ export function Map() {
     };
 
     return (
-        <div>
+        <div className="w-full px-2">
             <div id="map" className="map-desktop map-mobile"></div>
             <button className="pl-2" onClick={openGoogleMaps}>View Large Map on Google Maps</button>
         </div>

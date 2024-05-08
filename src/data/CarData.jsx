@@ -1,7 +1,7 @@
 export const CarData = [
     {
         id: 1,
-        name: 'Hyundai Stargazer',
+        name: 'Hyundai STARGAZER',
         image: '/img/stargezer.png',
         pdfPath: '/pdf/New-Stargazer-E-Brochure-id.pdf',
         link: 1,
@@ -79,7 +79,6 @@ export const CarData = [
                     {
                         title: 'Lane Following Assist (LFA)',
                         image: '/stargezer/KS_RHD_LFA_2kolom_544x360.jpeg',
-                        subImage: '/stargezer/KS_RHD_LFA_2kolom_544x360.jpeg',
                         desc: 'Kamera depan melacak penanda garis jalur dan membantu menjaga kendaraan tetap aman di tengah jalur.'
                     },
                     {
@@ -147,7 +146,7 @@ export const CarData = [
 
     {
         id: 2,
-        name: 'Hyundai Stargazer X',
+        name: 'Hyundai STARGAZER X',
         image: '/img/stargezerX.png',
         pdfPath: '/pdf/BROCHURE_STARGAZER_X_ID.pdf',
         link: '2',
@@ -216,11 +215,10 @@ export const CarData = [
                     {
                         title: '6-Airbag system (Driver, Passenger, Side & Curtain)',
                         image: '/stargezerX/Airbag-2-Kolom_544x360-.jpeg',
-                        subImage: '/stargezer/KS_RHD_LFA_2kolom_544x360.jpeg',
                         desc: 'STARGAZER X dilengkapi dengan 6 airbag untuk melindungi pengemudi dan penumpang apabila terjadi benturan yang tidak diinginkan.'
                     },
                     {
-                        title: 'Blind-spot Collision-avoidance Assist (BCA) memonitor blind-spot Anda saat berkendara. Jika ada kendaraan lain yang terdeteksi di sekitar mobil Anda, LED pada kaca spion akan menyala memberikan peringatan. Jika ada risiko benturan dengan kendaraan di sisi samping dalam kecepatan rendah (0 - 3km/jam), seperti misalnya saat keluar dari posisi parkir paralel, sistem akan berfungsi secara otomatis membantu pengereman darurat.',
+                        title: 'Blind-spot Collision-avoidance Assist (BCA - Dari parkir paralel)',
                         image: '/stargezerX/2_kolom_BCA.jpeg',
                         desc: 'BCA memonitor blind-spot Anda saat berkendara. Jika ada kendaraan lain yang terdeteksi di sekitar mobil Anda, LED pada kaca spion akan menyala memberikan peringatan. Jika ada risiko benturan dengan kendaraan di sisi samping dalam kecepatan rendah (0 - 3km/jam), seperti misalnya saat keluar dari posisi parkir paralel, sistem akan berfungsi secara otomatis membantu pengereman darurat.'
                     }
@@ -284,7 +282,7 @@ export const CarData = [
 
     {
         id: 3,
-        name: 'Hyundai Creta',
+        name: 'Hyundai CRETA',
         image: '/img/creta.png',
         pdfPath: '/pdf/CRETA.pdf',
         link: '3',
@@ -300,7 +298,7 @@ export const CarData = [
                     },
                     {
                         title: 'Trend 1.5 IVT',
-                        price: 'Rp. 340.500.000<<'
+                        price: 'Rp. 340.500.000'
                     },
                     {
                         title: 'Style 1.5 IVT',
@@ -431,7 +429,7 @@ export const CarData = [
 
     {
         id: 4,
-        name: 'Hyundai Santa FE',
+        name: 'Hyundai SANTA FE',
         image: '/img/santafe.png',
         pdfPath: '/pdf/SANTA FE.pdf',
         link: '4',
@@ -807,7 +805,7 @@ export const CarData = [
 
     {
         id: 7,
-        name: 'Stargazer',
+        name: 'Hyundai IONIQ 5',
         image: '/img/ioniq5.png',
         pdfPath: '/pdf/IONIQ-5-Brochure.pdf',
         link: 7,
