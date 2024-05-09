@@ -22,7 +22,7 @@ export default function ProdukPage() {
 
             </div>
             <div className="p-5">
-                <div className="flex items-center gap-1 text-lg hover:underline justify-end" onClick={scrollToTop}>
+                <div className="flex items-center gap-1 text-lg underline justify-end" onClick={scrollToTop}>
                     <FaArrowUpLong />
                     <p>Back to top</p>
                 </div>
