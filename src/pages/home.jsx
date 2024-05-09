@@ -9,6 +9,7 @@ import { Ri24HoursLine } from "react-icons/ri";
 import { Map } from "../components/home/Map";
 import { Footer } from "../components/Footer";
 import { FaArrowUpLong } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 
 
@@ -28,6 +29,56 @@ export default function HomePage() {
             behavior: "smooth"
         });
     };
+    // Animation Layout
+    const [showLayout, setShowLayout] = useState(false)
+
+    useEffect(() => {
+        setShowLayout(true);
+    }, []);
+
+    const [showLayout2, setShowLayout2] = useState(false)
+
+    useEffect(() => {
+        setShowLayout2(true);
+    }, []);
+
+    const [showLayout3, setShowLayout3] = useState('-translate-x-full')
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 1100) {
+                setShowLayout3('translate-x-0');
+            } else {
+                setShowLayout3('-translate-x-full');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const [showLayout4, setShowLayout4] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 1500) {
+                setShowLayout4(true);
+            } else {
+                setShowLayout4(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    // Animation Layout End
+
 
     return (
         <>
@@ -35,79 +86,85 @@ export default function HomePage() {
                 <Header />
                 <HeaderM />
                 <SwiperSlider />
-                
+
                 {/* Card Profil */}
                 <div className="pt-5 px-5 w-full gap-5 flex items-center flex-col xl:flex-row xl:gap-32  xl:pl-32 xl:py-10">
-                    <div className="w-44 h-52 xl:w-96 xl:h-[30rem] rounded-xl overflow-hidden ">
-                        <img src="/img/fotoprofil.jpg" alt="" className="w-full object-cover" />
-                    </div>
-
-                    <div className="w-full xl:w-[35rem] gap-5 flex flex-col text-black">
-                        <h1 className="font-bold text-2xl ">Halo!, Saya Yoga Aditya, Sales Consultant Di Hyundai Cibubur</h1>
-
-                        <div className="flex flex-col gap-5 items-center xl:text-lg">
-                            <p className=" font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
-                            <p className=" font-medium">Dengan antusiasme dan pengalaman dalam industri otomotif sejak tahun 2022, saya siap membantu Anda menemukan kendaraan baru yang sempurna. Wilayah layanan saya mencakup Cibubur, Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
-                            <p className="text-center"><i>“Kepuasan Anda merupakan kesenangan bagi Saya.”</i></p>
-                            <p className="text-center"><i>~Yoga 2024~</i></p>
+                    {showLayout && (
+                        <div className="w-44 h-52 xl:w-96 xl:h-[30rem] rounded-xl overflow-hidden showLayout">
+                            <img src="/img/fotoprofil.jpg" alt="" className="w-full object-cover" />
                         </div>
+                    )}
+                    {showLayout2 && (
+                        <div className={`w-full showLayout-2 xl:w-[35rem] gap-5 flex flex-col text-black transition-opacity duration-1000 ${showLayout2 ? 'opacity-100' : 'opacity-0'}`}>
+                            <h1 className="font-bold text-2xl ">Halo!, Saya Yoga Aditya, Sales Consultant Di Hyundai Cibubur</h1>
 
-                        <div className="w-full xl:hidden flex flex-wrap gap-2 justify-center text-blue-900">
-                            <div className="w-[45%] flex flex-col items-center border rounded-lg p-2">
-                                <TbBrandWechat className="w-10 h-10" />
-                                <p className="text-black">Konsultan Otomotif</p>
+                            <div className="flex flex-col gap-5 items-center xl:text-lg">
+                                <p className=" font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
+                                <p className=" font-medium">Dengan antusiasme dan pengalaman dalam industri otomotif sejak tahun 2022, saya siap membantu Anda menemukan kendaraan baru yang sempurna. Wilayah layanan saya mencakup Cibubur, Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
+                                <p className="text-center"><i>“Kepuasan Anda merupakan kesenangan bagi Saya.”</i></p>
+                                <p className="text-center"><i>~Yoga 2024~</i></p>
                             </div>
-                            <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
-                                <FaCarSide className="w-10 h-10" />
-                                <p className="text-black">Penjualan Unit Baru</p>
+
+                            <div className="w-full xl:hidden flex flex-wrap gap-2 justify-center text-blue-900">
+                                <div className="w-[45%] flex flex-col items-center border rounded-lg p-2">
+                                    <TbBrandWechat className="w-10 h-10" />
+                                    <p className="text-black">Konsultan Otomotif</p>
+                                </div>
+                                <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
+                                    <FaCarSide className="w-10 h-10" />
+                                    <p className="text-black">Penjualan Unit Baru</p>
+                                </div>
+                                <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
+                                    <GiTrade className="w-10 h-10" />
+                                    <p className="text-black">Tukar Tambah</p>
+                                </div>
+                                <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
+                                    <FaHome className="w-10 h-10" />
+                                    <p className="text-black">Home Test Drive</p>
+                                </div>
+                                <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
+                                    <Ri24HoursLine className="w-10 h-10" />
+                                    <p className="text-black">Chat 24 Jam</p>
+                                </div>
                             </div>
-                            <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
-                                <GiTrade className="w-10 h-10" />
-                                <p className="text-black">Tukar Tambah</p>
-                            </div>
-                            <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
-                                <FaHome className="w-10 h-10" />
-                                <p className="text-black">Home Test Drive</p>
-                            </div>
-                            <div className="w-[45%] flex flex-col items-center  border rounded-lg p-2">
-                                <Ri24HoursLine className="w-10 h-10" />
-                                <p className="text-black">Chat 24 Jam</p>
+
+                            <div className="flex flex-col xl:flex-row gap-5">
+                                <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-green-500 justify-center text-white items-center gap-3 xl:rounded-xl" onClick={handleClick}><FaWhatsapp className="text-2xl" /> Whatsapp</button>
+                                <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-blue-900 justify-center text-white items-center gap-3 xl:rounded-xl" onClick={handleInstagram}><FaInstagram className="text-2xl" /> Instagram</button>
                             </div>
                         </div>
-
-                        <div className="flex flex-col xl:flex-row gap-5">
-                            <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-green-500 justify-center text-white items-center gap-3 xl:rounded-xl" onClick={handleClick}><FaWhatsapp className="text-2xl" /> Whatsapp</button>
-                            <button className="py-3 px-5 rounded-lg flex xl:py-3 xl:px-20 bg-blue-900 justify-center text-white items-center gap-3 xl:rounded-xl" onClick={handleInstagram}><FaInstagram className="text-2xl" /> Instagram</button>
-                        </div>
-                    </div>
+                    )}
 
                     <div className="flex flex-col items-center gap-5 pt-5 w-full xl:hidden">
                         <h1 className="w-full font-bold text-lg border-b-4 py-1 border-blue-900">PRICELIST HYUNDAI 2024</h1>
                         <img src="/img/WhatsApp-Image-2024-03-28-at-10.11.05.jpeg" alt="" />
                     </div>
+
                 </div>
-                <div className="flex pt-5 px-5 gap-3 flex-wrap justify-center pb-10 ">
-                    <div className="text-center flex flex-nowrap w-full justify-center text-2xl text-black font-semibold">
-                        <h1>Leasing Support</h1>
-                    </div>
-                    <div className="xl:w-[15%] xl:h-full">
-                        <img src="/img/mybank.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                    </div>
+                    <div className={`flex pt-5 px-5 gap-3 flex-wrap justify-center pb-10 transition-transform duration-1000 transform ${showLayout3}`}>
+                        <div className="text-center flex flex-nowrap w-full justify-center text-2xl text-black font-semibold">
+                            <h1>Leasing Support</h1>
+                        </div>
+                        <div className="xl:w-[15%] xl:h-full">
+                            <img src="/img/mybank.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                        </div>
 
-                    <div className="xl:w-[15%] xl:h-full">
-                        <img src="/img/mandiri-tunas-finance.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                    </div>
+                        <div className="xl:w-[15%] xl:h-full">
+                            <img src="/img/mandiri-tunas-finance.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                        </div>
 
-                    <div className="xl:w-[15%] xl:h-full">
-                        <img src="/img/MAF.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                    </div>
+                        <div className="xl:w-[15%] xl:h-full">
+                            <img src="/img/MAF.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                        </div>
 
-                    <div className="xl:w-[15%] xl:h-full">
-                        <img src="/img/cimb-niaga.png" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                        <div className="xl:w-[15%] xl:h-full">
+                            <img src="/img/cimb-niaga.png" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                        </div>
                     </div>
-                </div>
                 {/* Card Profil End */}
-                <UtilityHome />
+                <div className={`transition-opacity duration-1000 ${showLayout4 ? 'opacity-100' : 'opacity-0'}`}>
+                    <UtilityHome />
+                </div>
 
                 <div className="w-full px-5 pt-10 gap-5 flex flex-col">
                     <h1 className="font-bold text-lg border-b-4 py-1 border-blue-900">Galeri Serah Terima Mobil</h1>

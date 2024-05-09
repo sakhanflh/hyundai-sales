@@ -13,3 +13,29 @@
         height: 20rem;
     } 
 }
+
+/* Animation */
+.showLayout{
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.showLayout-2{
+    animation: slideIn2 2s forwards;
+}
+@keyframes slideIn2 {
+    from {
+        transform: translateY(50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* Animation End */
