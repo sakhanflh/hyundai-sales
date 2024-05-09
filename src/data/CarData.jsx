@@ -641,45 +641,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 img: "/palisade/New_Palisade-Creamy_White_Pearl-3.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-abyss-black-pearl',
                                 img: "/palisade/New_Palisade-Abyss_Black_Pearl-1.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-graphite-gray-metallic',
                                 img: "/palisade/New_Palisade-Graphite_Gray_Metallic-1.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-moonlight-blue-pearl',
                                 img: "/palisade/New_Palisade-Moonlight_Blue_Pearl-1.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-shimmering-silver-metallic',
                                 img: "/palisade/New_Palisade-Shimmering_Silver_Metallic-1.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-abyss-black-pearl',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-graphite-gray-metallic',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-moonlight-blue-pearl',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-shimmering-silver-metallic',
                                 id: 5
                             }
                         ]
@@ -703,18 +703,20 @@ export const CarData = [
                 model: [
                     {
                         title: '9 Seater A/T',
-                        price: 'Rp. 924.6000.000'
+                        price: 'Rp. 924.600.000'
                     },
                     {
                         title: '7 Seater A/T',
                         price: 'Rp. 1.060.500.000'
                     },
                     {
-                        title: 'STARIA x Lombardi (Bussiness)',
+                        title: 'STARIA x Lombardi',
+                        subTitle: '(Bussiness)',
                         price: 'Rp. 1.148.500.000'
                     },
                     {
-                        title: 'STARIA x Lombardi (RSE)',
+                        title: 'STARIA x Lombardi',
+                        subTitle: '(RSE)',
                         price: 'Rp. 1.447.500.000'
                     }
                 ],
@@ -771,29 +773,29 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-shimmering-silver-metallic',
                                 img: "/staria/SZB72FC5JEE175_R2T_03_c9tdmd-2.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-abyss-black-pearl',
                                 img: "/staria/SZB92FC5JHH069_A2B_03_atjoni-4.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-creamy-white-pearl',
                                 img: "/staria/SZB72FC5JEE175_YAC_03_uegbvc-2.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-shimmering-silver-metallic',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-abyss-black-pearl',
                                 id: 3
                             }
                         ]
@@ -895,45 +897,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-gravity-gold-matte',
                                 img: "/ioniq5/IONIQ_5_-_Gravity_Gold_Matte-1.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-magnetic-silver-metallic',
                                 img: "/ioniq5/IONIQ_5_-_Magnetic_Silver_Metallic-1.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-midnight-black-pearl',
                                 img: "/ioniq5/IONIQ_5_-_Midnight_Black_Pearl-1.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-optic-white',
                                 img: "/ioniq5/IONIQ_5_-_Optic_White1.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 img: "/ioniq5/IONIQ_5_-_Titan_Gray_Metallic-1.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-gravity-gold-matte',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-magnetic-silver-metallic',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-midnight-black-pearl',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-optic-white',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 id: 5
                             }
                         ]
@@ -1007,13 +1009,13 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-silver-metallic',
                                 img: "/img/ioniq6.png",
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-silver-metallic',
                                 id: 1
                             }
                         ]

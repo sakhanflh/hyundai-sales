@@ -7,7 +7,10 @@ const Component1 = ({ fitur, model }) => {
                 {
                     model.map((data, index) => (
                         <div key={index} className="flex justify-between font-semibold xl:text-xl xl:px-14">
-                            <p>{data.title}</p>
+                            <div>
+                                <p>{data.title}</p>
+                                <p>{data.subTitle}</p>
+                            </div>
                             <p>{data.price}</p>
                         </div>
                     ))

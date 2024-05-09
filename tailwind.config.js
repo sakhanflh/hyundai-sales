@@ -24,7 +24,7 @@ export default {
         'typhoon-silver-metallic' : '#66696F',
         'moonlight-blue-pearl' : '#222D3D',
         'shimmering-silver-metallic' : '#959191',
-        'graphite-gray-metallic' : '#777777',
+        'graphite-gray-metallic' : '#1D1F28',
         'gravity-gold-matte' : '#646159',
         'silver-metallic' : '#C0C0C0',
         'magnetic-gray-metallic' : '#2F2F2F',
