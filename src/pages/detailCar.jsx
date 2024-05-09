@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import { CarData } from '../data/CarData'
 import { HeaderM } from '../components/HeaderM'
 import { Footer } from '../components/Footer'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Component1 from '../components/layout/Pricelist'
 import Component2 from '../components/layout/Highlights'
 import Component3 from '../components/layout/Performa'
@@ -22,6 +22,10 @@ export default function DetailCar() {
     function handleTab(id) {
         setActiveIndex(id)
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
 
     return (

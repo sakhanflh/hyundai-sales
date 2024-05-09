@@ -96,45 +96,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 img: "/stargezer/ks-creamy_51-768x389.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 img: "/stargezer/ks-dragon_51-768x389.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic',
                                 img: "/stargezer/ks-magnetic_51-768x389.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 img: "/stargezer/ks-midnight-768x389.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 img: "/stargezer/ks-titan_5-768x389.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 id: 5
                             }
                         ]
@@ -232,45 +232,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 img: "/stargezerX/ks-creamy_4-1.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 img: "/stargezerX/ks-dragon_4.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic',
                                 img: "/stargezerX/ks-magnetic_4.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 img: "/stargezerX/ks-midnight_4.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 img: "/stargezerX/ks-titan_4.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 id: 5
                             }
                         ]
@@ -379,45 +379,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 img: "/creta/Creta_-_Creamy_Whie_Pearl.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 img: "/creta/Creta_-_Dragon_Red_Pearl-1.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic ',
                                 img: "/creta/Creta_-_Magetic_Silver_Mentallic-1.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 img: "/creta/Creta_-_Midnight_Black_Pearl.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 img: "/creta/Creta_-_Titan_Gray_Metallic.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-creamy-white-pearl',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-dragon-red-pearl',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-silver-metallic ',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-midnight-black-pearl',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-titan-gray-metallic',
                                 id: 5
                             }
                         ]
@@ -506,45 +506,45 @@ export const CarData = [
                         title: 'Color Options',
                         images: [
                             {
-                                name: 'creamy',
+                                name: 'bg-glacier-white-metallic',
                                 img: "/santafe/SANTA_-_Glacier_White_Metallic1-1.png",
                             },
                             {
-                                name: 'red',
+                                name: 'bg-lagoon-blue-pearl',
                                 img: "/santafe/SANTA_-_Lagoon_Blue_Pearl-3.png"
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-gray-metallic',
                                 img: "/santafe/SANTA_-_Magnetic_Gray_Metallic1-1.png"
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-abyss-black-pearl',
                                 img: "/santafe/SANTA_-_Abyss_Black_Pearl1-1.png"
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-typhoon-silver-metallic',
                                 img: "/santafe/SANTA_-_Typhoon_Silver_Metallic1-2.png"
                             }
                         ],
                         colors: [
                             {
-                                name: 'creamy',
+                                name: 'bg-glacier-white-metallic',
                                 id: 1
                             },
                             {
-                                name: 'red',
+                                name: 'bg-lagoon-blue-pearl',
                                 id: 2
                             },
                             {
-                                name: 'abu',
+                                name: 'bg-magnetic-gray-metallic',
                                 id: 3
                             },
                             {
-                                name: 'midnight',
+                                name: 'bg-abyss-black-pearl',
                                 id: 4
                             },
                             {
-                                name: 'titan',
+                                name: 'bg-typhoon-silver-metallic',
                                 id: 5
                             }
                         ]
