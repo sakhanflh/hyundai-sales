@@ -981,7 +981,22 @@ export const CarData = [
                     {
                         title: 'Advanced Electric Performance',
                         image: '/ioniq6/Performance_D_1_Kolom_1120x600.png',
-                    }
+                    },
+                    {
+                        title: 'EV Performance Tune Up',
+                        image: '/ioniq6/Screen-01_2Kolom_544x360-.png',
+                        desc: 'Anda dapat mengatur tenaga motor, sensitivitas akselerator, tenaga kemudi, dan mode driveline agar sesuai dengan gaya mengemudi Anda.'
+                    },
+                    {
+                        title: 'Electric Active Sound Design (e-ASD)',
+                        image: '/ioniq6/Screen-02_2Kolom_544x360-.png',
+                        desc: 'IONIQ 6 meningkatkan kesenangan berkendara dengan menawarkan suara virtual seperti berada di pesawat ruang angkasa.'
+                    },
+                    {
+                        title: 'Speed Sync Lighting',
+                        image: '/ioniq6/Speed-Lighting_2Kolom_544x360-.png',
+                        desc: 'Untuk memberikan pengalaman berkendara yang dinamis, kecerahan pencahayaan pada ambient light berubah dari 10% pada kecepatan 30km/jam menjadi 100% pada kecepatan 100km/jam.'
+                    },
                 ]
             },
             {
