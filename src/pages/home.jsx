@@ -8,8 +8,7 @@ import { GiTrade } from "react-icons/gi";
 import { Ri24HoursLine } from "react-icons/ri";
 import { Map } from "../components/home/Map";
 import { Footer } from "../components/Footer";
-import { FaCircleArrowUp } from "react-icons/fa6";
-import { useEffect, useState } from "react";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 
 
@@ -22,23 +21,6 @@ export default function HomePage() {
     const handleInstagram = () => {
         window.location.href = 'https://www.instagram.com/yoga_aditya117?igsh=MWhmMHY3eHFiMWV5eg=='
     }
-
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        window.addEventListener("scroll", toggleVisibility);
-        return () => {
-            window.removeEventListener("scroll", toggleVisibility);
-        };
-    }, []);
-
-    const toggleVisibility = () => {
-        if (window.scrollY > 2000) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -53,13 +35,7 @@ export default function HomePage() {
                 <Header />
                 <HeaderM />
                 <SwiperSlider />
-                {/* Scroll To Top */}
-                <div className="fixed translate-x-80 translate-y-[31rem] w-12 h-12 xl:hidden">
-                    {isVisible &&
-                        <FaCircleArrowUp className="w-full h-full text-black" onClick={scrollToTop} />
-                    }
-                </div>
-                {/* Scroll To Top End */}
+                
                 {/* Card Profil */}
                 <div className="pt-5 px-5 w-full gap-5 flex items-center flex-col xl:flex-row xl:gap-32  xl:pl-32 xl:py-10">
                     <div className="w-44 h-52 xl:w-96 xl:h-[30rem] rounded-xl overflow-hidden ">
@@ -190,7 +166,14 @@ export default function HomePage() {
                     <Map />
                 </div>
 
-
+                {/* Scroll To Top */}
+                <div className="p-5">
+                    <div className="flex items-center gap-1 text-lg hover:underline justify-end" onClick={scrollToTop}>
+                        <FaArrowUpLong />
+                        <p>Back to top</p>
+                    </div>
+                </div>
+                {/* Scroll To Top End */}
 
                 <Footer />
             </div>
