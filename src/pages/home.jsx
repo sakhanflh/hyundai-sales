@@ -24,19 +24,20 @@ export default function HomePage() {
     }
 
     const [isVisible, setIsVisible] = useState(false);
-    const [lastScrollDirection, setLastScrollDirection] = useState(0);
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", toggleVisibility);
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", toggleVisibility);
         };
     }, []);
 
-    const handleScroll = () => {
-        const currentScrollPos = window.scrollY;
-        setIsVisible(lastScrollDirection > currentScrollPos);
-        setLastScrollDirection(currentScrollPos);
+    const toggleVisibility = () => {
+        if (window.scrollY > 2000) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
     };
 
     const scrollToTop = () => {

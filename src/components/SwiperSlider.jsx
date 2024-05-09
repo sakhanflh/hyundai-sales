@@ -18,8 +18,6 @@ export function SwiperSlider() {
                 // navigation
                 autoplay={{ delay: 3500, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 <SwiperSlide><img src="/img/Creta-IIMS.webp" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="/img/IONIQ5_D_Home-Banner-1860-x-720.jpg" alt="" /></SwiperSlide>
