@@ -10,6 +10,7 @@ import { Map } from "../components/home/Map";
 import { Footer } from "../components/Footer";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import LazyLoad from "react-lazyload";
 
 
 
@@ -46,7 +47,9 @@ export default function HomePage() {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 1100) {
+            if (window.innerWidth >= 768 && window.scrollY > 500) {
+                setShowLayout3('translate-x-0');
+            } else if (window.innerWidth < 768 && window.scrollY > 1100) {
                 setShowLayout3('translate-x-0');
             } else {
                 setShowLayout3('-translate-x-full');
@@ -60,14 +63,16 @@ export default function HomePage() {
         };
     }, []);
 
-    const [showLayout4, setShowLayout4] = useState(false)
+    const [showImg, setShowImg] = useState('-translate-x-full opacity-0')
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 1500) {
-                setShowLayout4(true);
+            if (window.innerWidth >= 768 && window.scrollY > 1600) {
+                setShowImg('translate-x-0 opacity-100');
+            } else if (window.innerWidth < 768 && window.scrollY > 3700) {
+                setShowImg('translate-x-0 opacity-100');
             } else {
-                setShowLayout4(false);
+                setShowImg('-translate-x-full opacity-0');
             }
         };
 
@@ -77,6 +82,28 @@ export default function HomePage() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const [showImg2, setShowImg2] = useState('translate-x-full opacity-0')
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerWidth >= 768 && window.scrollY > 1600) {
+                setShowImg2('translate-x-0 opacity-100');
+            } else if (window.innerWidth < 768 && window.scrollY > 3700) {
+                setShowImg2('translate-x-0 opacity-100');
+            } else {
+                setShowImg2('translate-x-full opacity-0');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     // Animation Layout End
 
 
@@ -141,91 +168,101 @@ export default function HomePage() {
                     </div>
 
                 </div>
-                    <div className={`flex pt-5 px-5 gap-3 flex-wrap justify-center pb-10 transition-transform duration-1000 transform ${showLayout3}`}>
-                        <div className="text-center flex flex-nowrap w-full justify-center text-2xl text-black font-semibold">
-                            <h1>Leasing Support</h1>
-                        </div>
-                        <div className="xl:w-[15%] xl:h-full">
-                            <img src="/img/mybank.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                        </div>
-
-                        <div className="xl:w-[15%] xl:h-full">
-                            <img src="/img/mandiri-tunas-finance.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                        </div>
-
-                        <div className="xl:w-[15%] xl:h-full">
-                            <img src="/img/MAF.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                        </div>
-
-                        <div className="xl:w-[15%] xl:h-full">
-                            <img src="/img/cimb-niaga.png" alt="" className="xl:object-cover xl:w-full xl:h-full" />
-                        </div>
+                <div className={`flex pt-5 px-5 gap-3 flex-wrap justify-center pb-10 transition-transform duration-1000 transform ${showLayout3}`}>
+                    <div className="text-center flex flex-nowrap w-full justify-center text-2xl text-black font-semibold">
+                        <h1>Leasing Support</h1>
                     </div>
+                    <div className="xl:w-[15%] xl:h-full">
+                        <img src="/img/mybank.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                    </div>
+
+                    <div className="xl:w-[15%] xl:h-full">
+                        <img src="/img/mandiri-tunas-finance.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                    </div>
+
+                    <div className="xl:w-[15%] xl:h-full">
+                        <img src="/img/MAF.jpg" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                    </div>
+
+                    <div className="xl:w-[15%] xl:h-full">
+                        <img src="/img/cimb-niaga.png" alt="" className="xl:object-cover xl:w-full xl:h-full" />
+                    </div>
+                </div>
                 {/* Card Profil End */}
-                <div className={`transition-opacity duration-1000 ${showLayout4 ? 'opacity-100' : 'opacity-0'}`}>
+                <div>
                     <UtilityHome />
                 </div>
 
                 <div className="w-full px-5 pt-10 gap-5 flex flex-col">
                     <h1 className="font-bold text-lg border-b-4 py-1 border-blue-900">Galeri Serah Terima Mobil</h1>
 
-                    <div className="flex flex-wrap w-full gap-2 justify-center">
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/1714499198146.jpg" alt="" className="w-full h-full object-fill" />
-                        </div>
+                    <LazyLoad
+                        height={200}
+                        offset={200}
+                        placeholder={<div>Loading...</div>}>
+                        <div className={`flex flex-wrap w-full gap-2 justify-center`}>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 ${showImg}`}>
+                                <img src="/img/1714499198146.jpg" alt="" className="w-full h-full object-fill" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/1714499198106.jpg" alt="" className="w-full h-full object-fill" />
-                        </div>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 ${showImg2}`}>
+                                <img src="/img/1714499198106.jpg" alt="" className="w-full h-full object-fill" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/1714499198122.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg}`}>
+                                <img src="/img/1714499198122.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/1714499198178.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg2}`}>
+                                <img src="/img/1714499198178.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_23aa979f.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg}`}>
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_23aa979f.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_29f41f60.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
-                        <div className="w-full xl:w-[30%] xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/1714499198160.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg2}`}>
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_29f41f60.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="w-full xl:w-[30%] xl:h-96 rounded-xl overflow-hidden">
+                                <img src="/img/1714499198160.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_53b76af4.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_53b76af4.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_986a815c.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_986a815c.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_c3848080.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
+                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_c3848080.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
 
-                        <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
-                            <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_e3d8148a.jpg" alt="" className="w-full h-full object-cover" />
+                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                                <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_e3d8148a.jpg" alt="" className="w-full h-full object-cover" />
+                            </div>
                         </div>
-                    </div>
+                    </LazyLoad>
                 </div>
 
                 <div className="w-full px-5 xl:pt-10 pt-5">
                     <h1 className="font-semibold text-xl xl:text-2xl w-full  text-blue-900 border-b-4 border-blue-900">Lokasi</h1>
                 </div>
 
-                <div className="w-full py-5 flex flex-col gap-5 relative items-center">
-                    <Map />
-                </div>
+                <LazyLoad
+                    height={200}
+                    offset={200}
+                    placeholder={<div>Loading...</div>}>
+                    <div className="w-full py-5 flex flex-col gap-5 relative items-center">
+                        <Map />
+                    </div>
+                </LazyLoad>
 
                 {/* Scroll To Top */}
-                <div className="p-5 justify-end flex">
-                    <div className="flex items-center gap-1 text-lg underline border px-4 py-2 rounded-lg justify-center shadow-xl bg-slate-50" onClick={scrollToTop}>
+                <div className="px-5 py-3 justify-end flex">
+                    <div className="flex items-center gap-1 text-base underline px-2 py-1 " onClick={scrollToTop}>
                         <FaArrowUpLong />
                         <p>Back to top</p>
                     </div>

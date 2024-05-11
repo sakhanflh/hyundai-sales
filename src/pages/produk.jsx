@@ -23,8 +23,8 @@ export default function ProdukPage() {
             </div>
 
             {/* Scroll To Top */}
-            <div className="p-5 justify-end flex">
-                <div className="flex items-center gap-1 text-lg underline border px-4 py-2 rounded-lg justify-center shadow-xl bg-slate-50 text-blue-900" onClick={scrollToTop}>
+            <div className="px-5 py-3 justify-end flex">
+                <div className="flex items-center gap-1 text-base underline px-2 py-1 text-blue-900" onClick={scrollToTop}>
                     <FaArrowUpLong />
                     <p>Back to top</p>
                 </div>
