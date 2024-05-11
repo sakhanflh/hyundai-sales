@@ -201,46 +201,46 @@ export default function HomePage() {
                         offset={200}
                         placeholder={<div>Loading...</div>}>
                         <div className={`flex flex-wrap w-full gap-2 justify-center`}>
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 ${showImg}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 ${showImg}`}>
                                 <img src="/img/1714499198146.jpg" alt="" className="w-full h-full object-fill" />
                             </div>
 
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 ${showImg2}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 ${showImg2}`}>
                                 <img src="/img/1714499198106.jpg" alt="" className="w-full h-full object-fill" />
                             </div>
 
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg}`}>
                                 <img src="/img/1714499198122.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg2}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 delay-75 ${showImg2}`}>
                                 <img src="/img/1714499198178.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg}`}>
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_23aa979f.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className={`w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg2}`}>
+                            <div className={`w-[48%] xl:w-[30%] rounded-xl overflow-hidden  transition-all duration-500 delay-100 ${showImg2}`}>
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_29f41f60.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
-                            <div className="w-full xl:w-[30%] xl:h-96 rounded-xl overflow-hidden">
+                            <div className="w-full xl:w-[30%] rounded-xl overflow-hidden">
                                 <img src="/img/1714499198160.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                            <div className="w-[48%] xl:w-[30%] rounded-xl overflow-hidden">
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.24_53b76af4.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                            <div className="w-[48%] xl:w-[30%] rounded-xl overflow-hidden">
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_986a815c.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                            <div className="w-[48%] xl:w-[30%] rounded-xl overflow-hidden">
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_c3848080.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
 
-                            <div className="w-[48%] xl:w-[30%] h-48 xl:h-96 rounded-xl overflow-hidden">
+                            <div className="w-[48%] xl:w-[30%] rounded-xl overflow-hidden">
                                 <img src="/img/WhatsApp Image 2024-05-05 at 01.15.25_e3d8148a.jpg" alt="" className="w-full h-full object-cover" />
                             </div>
                         </div>
