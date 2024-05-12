@@ -14,7 +14,7 @@ export default function ProdukPage() {
         });
     };
     return (
-        <div>
+        <div className="overflow-x-hidden text-blue-900">
             <Header />
             <HeaderM />
             <div className="pt-16 xl:pt-32 pb-10">
