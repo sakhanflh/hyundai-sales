@@ -3,8 +3,12 @@ import { SiGmail } from "react-icons/si";
 
 
 export function Footer() {
-    const handleWhatsapp = () => {
-        window.location.href = 'https://api.whatsapp.com/send/?phone=6283808883438&text&type=phone_number&app_absent=0'
+    const phoneNumber = "6283808883438"; 
+    const message = "Halo, Saya ingin info promo hyundai Palisade..."; 
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+
+    const handleClick = () => {
+        window.location.href = whatsappUrl
     }
 
     const handleInstagram = () => {
