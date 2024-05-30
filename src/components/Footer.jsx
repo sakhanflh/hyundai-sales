@@ -7,7 +7,7 @@ export function Footer() {
     const message = "Halo, Saya ingin info promo hyundai Palisade..."; 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
-    const handleClick = () => {
+    const handleWhatsapp = () => {
         window.location.href = whatsappUrl
     }
 
