@@ -11,7 +11,7 @@ export function HeaderM() {
     }
     return (
         <>
-            <div className="flex flex-col md:hidden lg:hidden xl:hidden w-full bg-white fixed z-50 border-b shadow-md">
+            <div className="flex flex-col  lg:hidden xl:hidden w-full bg-white fixed z-50 border-b shadow-md">
                 <div className="flex w-full h-16 lg:hidden xl:hidden 2xl:hidden px-3  justify-between items-center border-b">
                     <div className="w-32">
                         <img src="/img/Harga-Hyundai-Batam.png" alt="" />
@@ -19,7 +19,6 @@ export function HeaderM() {
                     <div className="w-6 h-6">
                         <GiHamburgerMenu className="w-full h-full" onClick={handleShowSidebar} />
                     </div>
-                    {/* <SideBar onShowSidebar={onShowSidebar}/> */}
                 </div>
 
                 <div className={onShowSidebar ? "w-full h-32 transition-all duration-500" : "w-full h-0 transition-all duration-500"}>

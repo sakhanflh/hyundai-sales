@@ -29,13 +29,13 @@ export function Footer() {
             </div>
 
             <div className="text-white flex items-center justify-center w-full gap-5 text-base xl:text-2xl pt-10">
-                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleWhatsapp}>
+                <div className="hover:scale-90 text-3xl" onClick={handleWhatsapp}>
                     <FaWhatsapp />
                 </div>
-                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleGmail}>
+                <div className="hover:scale-90 text-3xl" onClick={handleGmail}>
                     <SiGmail />
                 </div>
-                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleInstagram}>
+                <div className="hover:scale-90 text-3xl" onClick={handleInstagram}>
                     <FaInstagram />
                 </div>
             </div>

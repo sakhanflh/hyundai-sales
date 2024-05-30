@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 export function SwiperSlider() {
     return (
-        <div className='pt-16 w-full bg-green-500'>
+        <div className='pt-16 w-full'>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={50}
