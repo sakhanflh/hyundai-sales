@@ -22,20 +22,20 @@ export function Footer() {
                     <img src="/img/Harga-Hyundai-Batam.png" alt="" />
                 </div>
 
-                <div className="text-white text-sm xl:text-lg">
+                <div className="text-white text-sm xl:text-lg ">
                     <p>Hyundai Mobil Indonesia Cibubur</p>
                     <p>Jl. Alternatif Cibubur Transyogi No. 25 Jatisampurna, Bekasi</p>
                 </div>
             </div>
 
             <div className="text-white flex items-center justify-center w-full gap-5 text-base xl:text-2xl pt-10">
-                <div className="border-2 rounded-full p-3" onClick={handleWhatsapp}>
+                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleWhatsapp}>
                     <FaWhatsapp />
                 </div>
-                <div className="border-2 rounded-full p-3" onClick={handleGmail}>
+                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleGmail}>
                     <SiGmail />
                 </div>
-                <div className="border-2 rounded-full p-3" onClick={handleInstagram}>
+                <div className="border-2 rounded-full p-3 hover:scale-90" onClick={handleInstagram}>
                     <FaInstagram />
                 </div>
             </div>

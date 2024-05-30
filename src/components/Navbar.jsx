@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Navbar(){
     return(
         <>
-        <div className="w-full h-full xl:flex items-center justify-between px-5 hidden">
+        <div className="w-full h-full lg:flex items-center justify-between px-5 hidden">
             <div>
                 <img src="/img/Harga-Hyundai-Batam.png" alt="" />
             </div>

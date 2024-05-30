@@ -1,25 +1,39 @@
 import { useState } from "react";
-import { SideBar } from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
-export function HeaderM(){
+export function HeaderM() {
     const [onShowSidebar, setOnShowSidebar] = useState(false)
 
-    function handleShowSidebar(){
+    function handleShowSidebar() {
         setOnShowSidebar(!onShowSidebar)
         console.log('first')
     }
-    return(
+    return (
         <>
-        <div  className="bg-white fixed z-50 flex w-full h-16 lg:hidden xl:hidden 2xl:hidden px-3 justify-between items-center border-b shadow-md">
-            <div className="w-32">
-                <img src="/img/Harga-Hyundai-Batam.png" alt=""/>
+            <div className="flex flex-col md:hidden lg:hidden xl:hidden w-full bg-white fixed z-50 border-b shadow-md">
+                <div className="flex w-full h-16 lg:hidden xl:hidden 2xl:hidden px-3  justify-between items-center border-b">
+                    <div className="w-32">
+                        <img src="/img/Harga-Hyundai-Batam.png" alt="" />
+                    </div>
+                    <div className="w-6 h-6">
+                        <GiHamburgerMenu className="w-full h-full" onClick={handleShowSidebar} />
+                    </div>
+                    {/* <SideBar onShowSidebar={onShowSidebar}/> */}
+                </div>
+
+                <div className={onShowSidebar ? "w-full h-32 transition-all duration-500" : "w-full h-0 transition-all duration-500"}>
+                    <ul className="text-black flex flex-col w-full h-full justify-around">
+                        <Link to={'/'} className={`w-full h-[50%] flex items-center hover:bg-slate-200 px-3 ${onShowSidebar ? "visible" : "hidden"}`}>
+                            <li className="font-semibold text-black">Beranda</li>
+                        </Link >
+
+                        <Link to={'/produk'} className={`w-full h-[50%] flex items-center hover:bg-slate-200 px-3 ${onShowSidebar ? "visible" : "hidden"}`}>
+                            <li className="font-semibold text-black">Produk</li>
+                        </Link>
+                    </ul>
+                </div>
             </div>
-            <div className="w-6 h-6">
-                <GiHamburgerMenu className="w-full h-full"  onClick={handleShowSidebar}/>
-            </div>
-            <SideBar onShowSidebar={onShowSidebar}/>
-        </div>
         </>
     )
 }
