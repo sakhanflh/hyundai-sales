@@ -7,7 +7,6 @@ export function HeaderM() {
 
     function handleShowSidebar() {
         setOnShowSidebar(!onShowSidebar)
-        console.log('first')
     }
     return (
         <>

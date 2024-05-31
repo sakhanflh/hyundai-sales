@@ -113,7 +113,7 @@ export default function HomePage() {
 
     return (
         <>
-            <div className="text-blue-900 overflow-x-hidden">
+            <div className="text-blue-900 overflow-x-hidden font-jost">
                 <Header />
                 <HeaderM />
                 <div className="w-full">

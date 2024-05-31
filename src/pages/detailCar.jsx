@@ -30,7 +30,7 @@ export default function DetailCar() {
 
     return (
         <>
-            <div>
+            <div className='font-jost'>
                 <Header />
                 <HeaderM />
                 <div className="pt-16 pb-5">

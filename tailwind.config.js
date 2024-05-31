@@ -29,6 +29,9 @@ export default {
         'silver-metallic' : '#C0C0C0',
         'magnetic-gray-metallic' : '#2F2F2F',
       },
+      fontFamily: {
+        "jost": '"Jost", sans-serif',
+      },
     },
   },
   plugins: [],

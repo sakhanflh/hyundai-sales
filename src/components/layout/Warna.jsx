@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const Component5 = ({ selectedCarWarna }) => {
     const warna = selectedCarWarna.fitur.find(warna => warna.title.toLowerCase() == 'warna')
-    console.log(warna)
     const [currentImg, setCurrentImg] = useState('')
 
     function handleClick(id) {

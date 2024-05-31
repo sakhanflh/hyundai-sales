@@ -1,6 +1,5 @@
 const Component4 = ({ selectedCarKeamanan }) => {
     const keamanan = selectedCarKeamanan.fitur.find(car => car.title.toLowerCase() == 'keamanan')
-    console.log(keamanan)
 
     return (
         <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">

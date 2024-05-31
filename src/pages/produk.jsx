@@ -14,7 +14,7 @@ export default function ProdukPage() {
         });
     };
     return (
-        <div className="overflow-x-hidden text-blue-900">
+        <div className="overflow-x-hidden text-blue-900 font-jost">
             <Header />
             <HeaderM />
             <div className="pt-16 xl:pt-24 pb-10">
@@ -29,7 +29,6 @@ export default function ProdukPage() {
                 </div>
             </div>
             {/* Scroll To Top End */}
-
             <Footer />
         </div>
     )

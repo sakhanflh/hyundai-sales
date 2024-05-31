@@ -1,6 +1,6 @@
 const Component3 = ({ selectedCarPerforma }) => {
     const performa = selectedCarPerforma.fitur.find(car => car.title.toLowerCase() == 'performa')
-    console.log(performa)
+    
     return (
         <div className="w-full justify-center items-center flex flex-col pt-5 px-5 gap-5">
             {
