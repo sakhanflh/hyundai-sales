@@ -4,7 +4,7 @@ export const CarData = [
         name: 'Hyundai STARGAZER',
         image: '/img/stargezer.png',
         pdfPath: '/pdf/New-Stargazer-E-Brochure-id.pdf',
-        link: 1,
+        link: "stargazer",
         msg: 'Penasaran dengan sensasi berkendara yang ditawarkan oleh New STARGAZER? Temukan jawabannya dalam brosur dibawah ini.',
         fitur: [
             {
@@ -149,7 +149,7 @@ export const CarData = [
         name: 'Hyundai STARGAZER X',
         image: '/img/stargezerX.png',
         pdfPath: '/pdf/BROCHURE_STARGAZER_X_ID.pdf',
-        link: '2',
+        link: 'stargazer-x',
         msg: 'Ada satu langkah kecil yang akan membawa Anda ke dalam keajaiban Stargazer X. Tekan tombol brosur di bawah untuk melihat detail mengenai Stargazer X dan saksikan dunia mobil yang berbeda.',
         fitur: [
             {
@@ -285,7 +285,7 @@ export const CarData = [
         name: 'Hyundai CRETA',
         image: '/img/creta.png',
         pdfPath: '/pdf/CRETA.pdf',
-        link: '3',
+        link: 'creta',
         msg: 'Penasaran dengan apa yang membuat Hyundai Creta begitu istimewa? Ketuk tombol di bawah dan mari kita telusuri brosur eksklusif kami untuk menemukan jawabannya.',
         fitur: [
             {
@@ -432,7 +432,7 @@ export const CarData = [
         name: 'Hyundai SANTA FE',
         image: '/img/santafe.png',
         pdfPath: '/pdf/SANTA FE.pdf',
-        link: '4',
+        link: 'sante-fe',
         msg: 'Jelajahi kecanggihan dan keindahan mobil Hyundai Santa Fe dengan mengetuk tombol brosur di bawah. Mulailah perjalanan Anda ke dalam dunia kinerja dan kemewahan yang tiada tara.',
         fitur: [
             {
@@ -559,7 +559,7 @@ export const CarData = [
         name: 'Hyundai PALISADE',
         image: '/img/palisade.png',
         pdfPath: '/pdf/New-PALISADE-Brochure.pdf',
-        link: 5,
+        link: 'palisade',
         msg: 'Klik tombol dibawah ini untuk mengetahui Hyundai Palisade lebih lanjut',
         fitur: [
             {
@@ -694,7 +694,7 @@ export const CarData = [
         name: 'Hyundai STARIA',
         image: '/img/staria.png',
         pdfPath: '/pdf/STARIA.pdf',
-        link: 6,
+        link: 'staria',
         msg: 'Ketika gaya bertemu kenyamanan, Hyundai STARIA lahir. Jangan ragu untuk menekan tombol dan mengungkap keajaiban yang tersembunyi dalam brosur dibawah ini.',
         fitur: [
             {
@@ -810,7 +810,7 @@ export const CarData = [
         name: 'Hyundai IONIQ 5',
         image: '/img/ioniq5.png',
         pdfPath: '/pdf/IONIQ-5-Brochure.pdf',
-        link: 7,
+        link: 'ioniq-5',
         msg: 'Bukti nyata bahwa masa depan sudah tiba, dan namanya adalah Hyundai IONIQ 5. Penasaran dengan inovasi apa yang ditawarkannya? Tekan tombol sekarang untuk melihat lebih jauh.',
         fitur: [
             {
@@ -950,7 +950,7 @@ export const CarData = [
         name: 'Hyundai IONIQ 6',
         image: '/img/ioniq6.png',
         pdfPath: '/pdf/BROCHURE-IONIQ-6.pdf',
-        link: 8,
+        link: 'ioniq-6',
         msg: 'Ketika teknologi bertemu dengan gaya, Hyundai IONIQ 6 lahir. Jelajahi lebih dalam dengan menekan tombol sekarang dan biarkan diri Anda terpesona oleh inovasi yang ditawarkan.',
         fitur: [
             {
