@@ -17,7 +17,7 @@ import LazyLoad from "react-lazyload";
 
 export default function HomePage() {
     const phoneNumber = "6283808883438"; 
-    const message = "Halo, Saya ingin info promo hyundai Palisade..."; 
+    const message = "Halo Admin Hyundai Cibubur, boleh informasinya mengenai promo terbaru dari hyundai"; 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
     const handleClick = () => {
