@@ -1,6 +1,7 @@
 {
   "name": "hyundai-project",
   "private": true,
+  "homepage": "https://showroomhyundaicibubur.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
