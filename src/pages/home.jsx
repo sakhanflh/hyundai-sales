@@ -13,11 +13,9 @@ import { useEffect, useState } from "react";
 import LazyLoad from "react-lazyload";
 
 
-
-
 export default function HomePage() {
-    const phoneNumber = "6283808883438"; 
-    const message = "Halo Admin Hyundai Cibubur, boleh informasinya mengenai promo terbaru dari hyundai"; 
+    const phoneNumber = "6283808883438";
+    const message = "Halo Admin Hyundai Cibubur, boleh informasinya mengenai promo terbaru dari hyundai";
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
     const handleClick = () => {
@@ -106,11 +104,6 @@ export default function HomePage() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-
-    // Animation Layout End
-
-
     return (
         <>
             <div className="text-blue-900 overflow-x-hidden font-jost">
@@ -128,12 +121,12 @@ export default function HomePage() {
                         </div>
                     )}
                     {showLayout2 && (
-                        <div className={`w-full showLayout-2 lg:w-[35rem] gap-5 flex flex-col text-black transition-opacity duration-1000 ${showLayout2 ? 'opacity-100' : 'opacity-0'}`}>
+                        <article className={`w-full showLayout-2 lg:w-[35rem] gap-5 flex flex-col text-black transition-opacity duration-1000 ${showLayout2 ? 'opacity-100' : 'opacity-0'}`}>
                             <h1 className="font-bold text-2xl ">Halo!, Saya Yoga Aditya, Sales Consultant Di Hyundai Cibubur</h1>
 
                             <div className="flex flex-col gap-5 items-center lg:text-lg">
-                                <p className=" font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
-                                <p className=" font-medium">Dengan antusiasme dan pengalaman dalam industri otomotif sejak tahun 2022, saya siap membantu Anda menemukan kendaraan baru yang sempurna. Wilayah layanan saya mencakup Cibubur, Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
+                                <p className="font-medium">Menyediakan layanan terbaik dalam penjualan unit baru, saya siap memenuhi kebutuhan Anda dengan penuh dedikasi. Salah satu keunggulan yang saya tawarkan adalah program spesial tukar tambah, yang dirancang untuk membuat pengalaman Anda lebih menguntungkan.</p>
+                                <p className="font-medium">Dengan antusiasme dan pengalaman dalam industri otomotif sejak tahun 2022, saya siap membantu Anda menemukan kendaraan baru yang sempurna. Wilayah layanan saya mencakup Cibubur, Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
                                 <p className="text-center"><i>“Kepuasan Anda merupakan kesenangan bagi Saya.”</i></p>
                                 <p className="text-center"><i>~Yoga 2024~</i></p>
                             </div>
@@ -165,7 +158,7 @@ export default function HomePage() {
                                 <button className="py-3 px-5 rounded-lg flex lg:py-3 lg:px-20 bg-green-500 justify-center text-white items-center gap-3 lg:rounded-xl hover:scale-90 transition-all duration-500" onClick={handleClick}><FaWhatsapp className="text-2xl" /> Whatsapp</button>
                                 <button className="py-3 px-5 rounded-lg flex lg:py-3 lg:px-20 bg-blue-900 justify-center text-white items-center gap-3 lg:rounded-xl hover:scale-90 transition-all duration-500" onClick={handleInstagram}><FaInstagram className="text-2xl" /> Instagram</button>
                             </div>
-                        </div>
+                        </article>
                     )}
 
                     <div className="flex flex-col items-center gap-5 pt-5 w-full lg:hidden">
@@ -176,7 +169,7 @@ export default function HomePage() {
                 </div>
                 <div className={`flex pt-5 px-5 gap-3 flex-wrap justify-center pb-10 transition-transform duration-1000 transform ${showLayout3}`}>
                     <div className="text-center flex flex-nowrap w-full justify-center text-2xl text-black font-semibold">
-                        <h1>Leasing Support</h1>
+                        <h2>Leasing Support</h2>
                     </div>
                     <div className="lg:w-[15%] lg:h-full">
                         <img src="/img/mybank.jpg" alt="" className="lg:object-cover lg:w-full lg:h-full" />
