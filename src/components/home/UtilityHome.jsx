@@ -1,96 +1,208 @@
 import { CardCar } from "../CardCar";
 import { CarData } from "../../data/CarData";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
+import { useEffect, useState } from "react";
+import SkeletonLoading from "../fragments/SkeletonLoading";
 
-gsap.registerPlugin(useGSAP);
+export function UtilityHome() {
+    const [carData, setCarData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
+    useEffect(() => {
+        dataLoading()
+    }, [])
+    const dataLoading = () => {
+        setTimeout(() => {
+            setCarData(CarData);
+            setIsLoading(false);
+        }, 1000);
+    }
 
-export function UtilityHome(){
-    useGSAP(() => {
-        gsap.from("#elementRef1", {
-            x: 100,
-            opacity: 0, 
-            duration: 2, 
-            ease: "back.out",
-            delay: 0.5,
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef2", {
-            x: -100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    
-    useGSAP(() => {
-        gsap.from("#elementRef3", {
-            x: 100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef4", {
-            x: -100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef5", {
-            x: 100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef6", {
-            x: -100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef7", {
-            x: 100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-    useGSAP(() => {
-        gsap.from("#elementRef8", {
-            x: -100, // Mulai dari bawah
-            opacity: 0, // Opacity awal
-            duration: 2, // Durasi animasi
-            ease: "back.out",
-        })
-    })
-
-
-
-    return(
+    return (
         <>
-        <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0 xl:text-xl">
-            {
-                CarData.map((data, index) => (
-                    <CardCar 
-                        key={data.id}
-                        image={data.image}
-                        name={data.name}
-                        linkTo={data.link}
-                        id={data.id}
-                    />
-                ))
-            }
-        </div>
+            <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0 xl:text-xl">
+                {isLoading ? (
+                    <div className="w-full flex flex-wrap gap-5 justify-center pt-10 xl:pt-0 ">
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-52 xl:w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-60 xl:w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-72 xl:w-[28%] border rounded-lg p-5">
+                            <div>
+                                <SkeletonLoading
+                                    height={'h-40'}
+                                />
+                            </div>
+                            <div className="flex flex-col items-center gap-2 mt-2">
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-72'}
+                                    />
+                                </div>
+                                <div>
+                                    <SkeletonLoading
+                                        height={'h-10'}
+                                        width={'w-80'}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    carData.map((data) => (
+                        <CardCar
+                            key={data.id}
+                            image={data.image}
+                            name={data.name}
+                            linkTo={data.link}
+                            id={data.id}
+                        />
+                    ))
+                )}
+            </div>
         </>
     )
 }

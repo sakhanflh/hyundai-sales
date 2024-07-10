@@ -30,6 +30,14 @@ export const CarData = [
                     {
                         title: 'Prima 1.5 IVT',
                         price: 'Rp. 320.900.000'
+                    },
+                    {
+                        title: 'X Style 1.5 IVT',
+                        price: 'Rp. 335.800.000'
+                    },
+                    {
+                        title: 'X Prime 1.5 IVT',
+                        price: 'Rp. 346.400.000'
                     }
                 ],
                 noted: [
