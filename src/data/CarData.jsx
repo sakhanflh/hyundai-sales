@@ -28,7 +28,7 @@ export const CarData = [
                         price: 'Rp. 275.300.000'
                     },
                     {
-                        title: 'Prima 1.5 IVT',
+                        title: 'Prime 1.5 IVT',
                         price: 'Rp. 320.900.000'
                     },
                     {
@@ -305,6 +305,10 @@ export const CarData = [
                         price: 'Rp. 297.300.000'
                     },
                     {
+                        title: 'Trend 1.5 MT',
+                        price: 'Rp. 319.300.000'
+                    },
+                    {
                         title: 'Trend 1.5 IVT',
                         price: 'Rp. 340.500.000'
                     },
@@ -448,19 +452,19 @@ export const CarData = [
                 id: 1,
                 model: [
                     {
-                        title: 'Prime AT',
+                        title: 'G 2.5 Prime',
                         price: 'Rp. 625.000.000'
                     },
                     {
-                        title: 'Signature AT',
+                        title: 'G 2.5 Signature',
                         price: 'Rp. 706.000.000'
                     },
                     {
-                        title: 'Prime DCT',
+                        title: 'D 2.2 Prime',
                         price: 'Rp. 686.500.000'
                     },
                     {
-                        title: 'Signature DCT',
+                        title: 'D 2.2 Signature',
                         price: 'Rp. 759.000.000'
                     },
                 ],
@@ -575,16 +579,24 @@ export const CarData = [
                 id: 1,
                 model: [
                     {
-                        title: 'Prime A/T',
-                        price: 'Rp. 904.000.000'
+                        title: 'Prime',
+                        price: 'Rp. 910.000.000'
                     },
                     {
-                        title: 'Signature Navi A/T',
-                        price: 'Rp. 1.044.500.000'
+                        title: 'Signature',
+                        price: 'Rp. 1.051.000.000'
                     },
                     {
-                        title: 'Signature AWD A/T',
-                        price: 'Rp. 1.181.000.000'
+                        title: 'Signature AWD',
+                        price: 'Rp. 1.187.000.000'
+                    },
+                    {
+                        title: 'Signature XRT',
+                        price: 'Rp. 1.079.000.000'
+                    },
+                    {
+                        title: 'Signature AWD XRT',
+                        price: 'Rp. 1.215.000.000'
                     }
                 ]
             },
@@ -710,22 +722,12 @@ export const CarData = [
                 id: 1,
                 model: [
                     {
-                        title: '9 Seater A/T',
-                        price: 'Rp. 924.600.000'
+                        title: 'Signature 9',
+                        price: 'Rp. 924.000.000'
                     },
                     {
-                        title: '7 Seater A/T',
+                        title: 'Signature 7',
                         price: 'Rp. 1.060.500.000'
-                    },
-                    {
-                        title: 'STARIA x Lombardi',
-                        subTitle: '(Bussiness)',
-                        price: 'Rp. 1.148.500.000'
-                    },
-                    {
-                        title: 'STARIA x Lombardi',
-                        subTitle: '(RSE)',
-                        price: 'Rp. 1.447.500.000'
                     }
                 ],
             },
@@ -826,24 +828,24 @@ export const CarData = [
                 id: 1,
                 model: [
                     {
-                        title: 'Prime Standard',
-                        price: 'Rp. 712.900.000'
+                        title: 'Prime Reguler',
+                        price: 'Rp. 782.000.000'
                     },
                     {
-                        title: 'Prime Long',
-                        price: 'Rp. 750.300.000'
+                        title: 'Prime Long Range',
+                        price: 'Rp. 823.000.000'
                     },
                     {
-                        title: 'Signature Standard',
-                        price: 'Rp. 770.300.000'
+                        title: 'Signature Reguler',
+                        price: 'Rp. 845.000.000'
                     },
                     {
-                        title: 'Signature Long',
-                        price: 'Rp. 815.900.000'
+                        title: 'Signature Long Range',
+                        price: 'Rp. 895.000.000'
                     },
                     {
                         title: 'Batik Edition',
-                        price: 'Rp. 902.300.000'
+                        price: 'Rp. 990.000.000'
                     }
                 ],
                 noted: [
@@ -966,7 +968,7 @@ export const CarData = [
                 id: 1,
                 model: [
                     {
-                        title: 'Signature AWD',
+                        title: 'Signature',
                         price: 'Rp. 1.220.000.000'
                     }
                 ]
